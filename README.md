@@ -1,6 +1,6 @@
 # 🍌 PaperBanana
 
-Implementation of the **PaperBanana** framework from ["PaperBanana: Automating Academic Illustration for AI Scientists"](https://arxiv.org/abs/2505.23894) (Zhu et al., 2025).
+Implementation of the **PaperBanana** framework from ["PaperBanana: Automating Academic Illustration for AI Scientists"](hhttps://arxiv.org/abs/2601.23265) (Zhu et al., 2025).
 
 > An agentic framework that turns methodology text into publication-ready architecture diagrams — no Figma, no TikZ, no tears.
 

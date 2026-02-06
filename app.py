@@ -213,10 +213,14 @@ DESCRIPTION_MD = """\
 Paste your paper's methodology section + a caption, and PaperBanana's 5-agent pipeline
 (Retriever → Planner → Stylist → Visualizer → Critic) will generate a diagram for you.
 
-> Based on [*PaperBanana: Automating Academic Illustration for AI Scientists*](https://arxiv.org/abs/2505.23894) (Zhu et al., NeurIPS 2025).
+> Based on [*PaperBanana: Automating Academic Illustration for AI Scientists*](https://arxiv.org/abs/2601.23265) (Zhu et al.).
 """
 
-with gr.Blocks(title="PaperBanana") as demo:
+with gr.Blocks(
+    title="PaperBanana",
+    theme=gr.themes.Soft(primary_hue="amber", secondary_hue="blue"),
+    css="footer { display: none !important; }",
+) as demo:
     gr.Markdown(DESCRIPTION_MD)
 
     # ── Example gallery ─────────────────────────────────────────────────────
@@ -276,7 +280,4 @@ with gr.Blocks(title="PaperBanana") as demo:
     )
 
 if __name__ == "__main__":
-    demo.queue().launch(
-        theme=gr.themes.Soft(primary_hue="amber", secondary_hue="blue"),
-        css="footer { display: none !important; }",
-    )
+    demo.queue().launch(server_name="0.0.0.0", server_port=7860)
