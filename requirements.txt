@@ -2,3 +2,5 @@ google-genai>=0.1.0
 pillow>=10.0.0
 numpy>=1.24.0
 matplotlib>=3.7.0
+python-dotenv>=1.0.0
+gradio>=5.0.0

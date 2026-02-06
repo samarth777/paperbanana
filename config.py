@@ -2,6 +2,9 @@
 Configuration for PaperBanana framework.
 """
 import os
+from dotenv import load_dotenv
+
+load_dotenv()
 
 # Gemini API Configuration
 GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY")

@@ -1,1 +1,10 @@
+.env
+__pycache__/
+*.pyc
+
+# Large data / external
 neurips_2024_papers/
+neurips2025/
+parsed_output/
+MinerU/
+.venv/

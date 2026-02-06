@@ -146,10 +146,32 @@ def example_statistical_plot():
     print("Run the generated Python file to create the plot image.")
 
 
-def example_full_pipeline():
-    """Example 5: Full pipeline with all features and history saving."""
+def example_with_neurips_references():
+    """Example 5b: Using MinerU-parsed NeurIPS reference set."""
     print("\n" + "="*80)
-    print("EXAMPLE 5: Full Pipeline with History")
+    print("EXAMPLE 5b: With NeurIPS 2025 Reference Set (from MinerU)")
+    print("="*80 + "\n")
+
+    from load_reference_set import load_reference_set
+
+    ref_set = load_reference_set()
+    if not ref_set:
+        print("No reference set found. Ensure data/spotlight_reference_set.json exists.")
+        return
+
+    result = generate_illustration(
+        methodology_text=EXAMPLE_METHODOLOGY,
+        caption=EXAMPLE_CAPTION,
+        reference_set=ref_set,
+        output_path="examples/neurips_refs"
+    )
+    print(f"\nGenerated image: {result['final_image_path']}")
+
+
+def example_full_pipeline():
+    """Example 6: Full pipeline with all features and history saving."""
+    print("\n" + "="*80)
+    print("EXAMPLE 6: Full Pipeline with History")
     print("="*80 + "\n")
     
     pb = PaperBanana(
@@ -203,7 +225,10 @@ def main():
         # Example 4: Statistical plots
         # example_statistical_plot()
         
-        # Example 5: Full pipeline
+        # Example 5b: With NeurIPS MinerU references
+        # example_with_neurips_references()
+        
+        # Example 6: Full pipeline
         # example_full_pipeline()
         
     except Exception as e:

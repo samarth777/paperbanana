@@ -1,16 +1,61 @@
-# PaperBanana Implementation
+# 🍌 PaperBanana
 
-Implementation of the **PaperBanana** framework from the paper "PaperBanana: Automating Academic Illustration for AI Scientists" (Zhu et al., 2025).
+Implementation of the **PaperBanana** framework from ["PaperBanana: Automating Academic Illustration for AI Scientists"](https://arxiv.org/abs/2505.23894) (Zhu et al., 2025).
 
-## Overview
+> An agentic framework that turns methodology text into publication-ready architecture diagrams — no Figma, no TikZ, no tears.
 
-PaperBanana is an agentic framework for automated generation of publication-ready academic illustrations. It orchestrates five specialized agents:
+## Examples
 
-1. **Retriever Agent**: Finds relevant reference examples using VLM ranking
-2. **Planner Agent**: Translates methodology into comprehensive textual descriptions
-3. **Stylist Agent**: Applies aesthetic guidelines for publication quality
-4. **Visualizer Agent**: Renders images using Gemini image generation models
-5. **Critic Agent**: Provides iterative feedback for refinement
+All images below were generated end-to-end by PaperBanana (3 refinement iterations each, using the NeurIPS 2025 spotlight reference set).
+
+### Transformer — *Attention Is All You Need* (Vaswani et al., 2017)
+
+<p align="center">
+  <img src="examples/readme/transformer_iter3_0.jpg" width="600" />
+</p>
+
+### ResNet — *Deep Residual Learning* (He et al., 2016)
+
+<p align="center">
+  <img src="examples/readme/resnet_iter3_0.jpg" width="600" />
+</p>
+
+### DDPM — *Denoising Diffusion Probabilistic Models* (Ho et al., 2020)
+
+<p align="center">
+  <img src="examples/readme/ddpm_iter3_0.jpg" width="600" />
+</p>
+
+---
+
+## How It Works
+
+PaperBanana orchestrates **five specialized agents** in an iterative pipeline:
+
+```
+Methodology Text + Caption
+        │
+        ▼
+  ┌─────────────┐
+  │  Retriever   │  → Finds relevant reference diagrams (from 100 NeurIPS examples)
+  └──────┬──────┘
+         ▼
+  ┌─────────────┐
+  │   Planner    │  → Translates methodology into a detailed visual description
+  └──────┬──────┘
+         ▼
+  ┌─────────────┐
+  │   Stylist    │  → Applies academic aesthetic guidelines
+  └──────┬──────┘
+         ▼
+  ┌─────────────┐
+  │  Visualizer  │  → Generates the image (Gemini image generation)
+  └──────┬──────┘
+         ▼
+  ┌─────────────┐
+  │   Critic     │  → Evaluates & provides feedback → loops back to Planner
+  └─────────────┘
+```
 
 ## Installation
 
@@ -18,181 +63,114 @@ PaperBanana is an agentic framework for automated generation of publication-read
 pip install -r requirements.txt
 ```
 
-## Setup
-
-Set your Gemini API key as an environment variable:
+Or with [uv](https://docs.astral.sh/uv/):
 
 ```bash
-export GEMINI_API_KEY='your-api-key-here'
+uv sync
+```
+
+## Setup
+
+Create a `.env` file with your Gemini API key:
+
+```
+GEMINI_API_KEY=your-api-key-here
 ```
 
 ## Quick Start
 
-### Basic Usage
-
 ```python
 from paperbanana import generate_illustration
+from load_reference_set import load_reference_set
+
+# Load 100 curated NeurIPS 2025 architecture diagrams
+ref_set = load_reference_set()
 
 methodology = """
-Your methodology description here...
+Our model uses a Vision Transformer backbone to extract patch embeddings,
+followed by a cross-attention module that fuses text and image features.
+The fused representation is decoded by a lightweight MLP head for classification.
 """
-
-caption = "Architecture of proposed method"
 
 result = generate_illustration(
     methodology_text=methodology,
-    caption=caption,
-    output_path="output/my_diagram"
+    caption="Architecture of our proposed vision-language fusion model",
+    reference_set=ref_set,
+    output_path="output/my_diagram",
 )
 
 print(f"Generated: {result['final_image_path']}")
 ```
 
-### Advanced Usage with All Features
+### Advanced Usage
 
 ```python
 from paperbanana import PaperBanana
+from load_reference_set import load_reference_set
 
-# Create reference set (optional)
-reference_set = [
-    {
-        'id': 'ref_001',
-        'domain': 'Computer Vision',
-        'diagram_type': 'Architecture Diagram',
-        'description': 'Description of reference diagram...'
-    },
-    # ... more references
-]
-
-# Initialize framework
 pb = PaperBanana(
-    reference_set=reference_set,
-    mode="diagram",  # or "plot" for statistical plots
-    max_iterations=3
+    reference_set=load_reference_set(),
+    mode="diagram",       # or "plot" for statistical plots
+    max_iterations=3,
 )
 
-# Generate illustration
 result = pb.generate(
     methodology_text=methodology,
     caption=caption,
-    output_path="output/diagram"
+    output_path="output/diagram",
 )
 
-# Save generation history
+# Save full generation history for analysis
 pb.save_history("output/history.json")
 ```
-
-### Generating Statistical Plots
-
-```python
-from paperbanana import PaperBanana
-
-pb = PaperBanana(mode="plot")
-
-plot_description = """
-Create a line plot showing accuracy vs. epochs...
-"""
-
-result = pb.generate(
-    methodology_text=plot_description,
-    caption="Training accuracy comparison",
-    output_path="output/plot",
-    data={'epochs': [1,2,3], 'accuracy': [0.7, 0.8, 0.9]}
-)
-
-# This generates Python code - run it to create the plot
-```
-
-## Examples
-
-Run the included examples:
-
-```bash
-python examples.py
-```
-
-This demonstrates:
-- Basic diagram generation
-- Using reference examples
-- Ablation studies (skipping components)
-- Statistical plot generation
-- Full pipeline with history saving
 
 ## Project Structure
 
 ```
-paperbanana_implementation/
+paperbanana/
+├── paperbanana.py            # Main orchestration
+├── config.py                 # API keys & model config
+├── aesthetic_guidelines.py   # NeurIPS-style visual guidelines
+├── utils.py                  # Shared utilities
+├── load_reference_set.py     # Load reference set for RetrieverAgent
+├── examples.py               # Runnable examples
 ├── agents/
-│   ├── __init__.py
-│   ├── retriever.py       # Retriever Agent
-│   ├── planner.py         # Planner Agent
-│   ├── stylist.py         # Stylist Agent
-│   ├── visualizer.py      # Visualizer Agent
-│   └── critic.py          # Critic Agent
-├── paperbanana.py         # Main orchestration
-├── config.py              # Configuration
-├── aesthetic_guidelines.py # Style guide
-├── utils.py               # Utilities
-├── examples.py            # Example scripts
-├── requirements.txt       # Dependencies
-└── README.md             # This file
+│   ├── retriever.py          # Retriever Agent  (VLM-based ranking)
+│   ├── planner.py            # Planner Agent    (methodology → description)
+│   ├── stylist.py            # Stylist Agent    (aesthetic refinement)
+│   ├── visualizer.py         # Visualizer Agent (image generation)
+│   └── critic.py             # Critic Agent     (evaluate & feedback)
+├── data/
+│   ├── spotlight_reference_set.json      # 100 curated architecture diagrams
+│   └── spotlight_reference_images/       # Corresponding images
+├── examples/                 # Generated output images
+│   └── readme/               # Showcase examples shown above
+├── pyproject.toml
+├── requirements.txt
+└── README.md
 ```
+
+## Reference Set
+
+The Retriever Agent draws from **100 top-quality architecture diagrams** curated from NeurIPS 2025 Spotlight papers:
+
+- **685** spotlight papers parsed with [MinerU](https://github.com/opendatalab/MinerU) on [Modal](https://modal.com) (50× A10G GPUs)
+- **1,732** methodology-section images extracted via section-aware filtering
+- **321** verified architecture diagrams after 2-pass Gemini classification (caption + visual)
+- **100** final diagrams selected by quality ranking (all scored 10/10)
 
 ## Configuration
 
-Edit `config.py` to customize:
+Edit `config.py`:
 
-- **Models**: VLM and image generation models
-- **Iterations**: Maximum refinement iterations (default: 3)
-- **Image size**: Output resolution
-- **Reference count**: Number of examples to retrieve
+| Setting | Default | Description |
+|---------|---------|-------------|
+| `VLM_MODEL` | `gemini-3-pro-preview` | Reasoning model (Retriever, Planner, Stylist, Critic) |
+| `IMAGE_MODEL` | `gemini-3-pro-image-preview` | Image generation model (Visualizer) |
+| `MAX_REFINEMENT_ITERATIONS` | `3` | Planner↔Critic loop iterations |
+| `NUM_REFERENCE_EXAMPLES` | `10` | References retrieved per generation |
 
-## Ablation Studies
-
-Test different configurations:
-
-```python
-# Without styling
-result = generate_illustration(
-    methodology_text=methodology,
-    caption=caption,
-    output_path="output",
-    skip_styling=True
-)
-
-# Without refinement
-result = generate_illustration(
-    methodology_text=methodology,
-    caption=caption,
-    output_path="output",
-    skip_refinement=True
-)
-
-# Without retrieval
-result = generate_illustration(
-    methodology_text=methodology,
-    caption=caption,
-    output_path="output",
-    skip_retrieval=True
-)
-```
-
-## Models Used
-
-- **VLM**: `gemini-3-pro-preview` (for reasoning tasks)
-- **Image Generation**: `gemini-3-pro-image-preview` (referred to as "Nano-Banana-Pro" in the paper)
-
-## Features
-
-✅ Multi-agent architecture  
-✅ Iterative refinement with critic feedback  
-✅ Aesthetic styling with NeurIPS guidelines  
-✅ Reference example retrieval  
-✅ Statistical plot generation  
-✅ Complete generation history tracking  
-✅ Ablation study support  
-
-## Paper Reference
+## Paper
 
 ```bibtex
 @article{zhu2025paperbanana,
@@ -206,10 +184,3 @@ result = generate_illustration(
 ## License
 
 This implementation is for research and educational purposes.
-
-## Notes
-
-- The framework requires a valid Gemini API key
-- Image generation may take several seconds per iteration
-- Generated images are saved with iteration numbers for comparison
-- Plot mode generates Python code that must be executed separately

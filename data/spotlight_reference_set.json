@@ -1,0 +1,1802 @@
+[
+  {
+    "id": "ref_0001",
+    "domain": "Natural Language Processing",
+    "diagram_type": "Architecture Diagram",
+    "description": "Figure 1: GraphMaster: A hierarchical multi-agent framework for text-attributed graph synthesis. ",
+    "image_path": "data/spotlight_reference_images/ref_0001_00232_GraphMaster_Automated_Graph_Synthesis_via_LLM_Agents_in_Data-Limited_Environments__fdf13132133da88f7ce9ae4d0a22c29da1f05f75072f95010a29b1392696ea70.jpg",
+    "paper_title": "GraphMaster: Automated Graph Synthesis via LLM Agents in Data-Limited Environments",
+    "source_file": "00232_GraphMaster_Automated_Graph_Synthesis_via_LLM_Agents_in_Data-Limited_Environments",
+    "page_idx": 3,
+    "section": "3.1 Framework Overview: RAG-Based Multi-Agent Architecture",
+    "bbox": [
+      174,
+      88,
+      825,
+      265
+    ],
+    "quality_score": 10
+  },
+  {
+    "id": "ref_0002",
+    "domain": "Computer Vision",
+    "diagram_type": "Architecture Diagram",
+    "description": "Figure 3: Overview of our VoxDet. After 2D-to-3D lifting, VoxDet spatially decouples 3D volumes $\\mathbf { V }$ into two task-specific branches, learning different spatial deformations in the densely projected tri-perceptive space. Then, VoxDet regresses a 4D offset field $\\Delta$ towards instance boundaries with $\\mathbf { V } _ { \\mathrm { r e g } }$ , serving for the instance-level aggregation with $\\mathbf { V } _ { \\mathrm { c l s } }$ in the classification branch. ",
+    "image_path": "data/spotlight_reference_images/ref_0002_00279_VoxDet_Rethinking_3D_Semantic_Scene_Completion_as_Dense_Object_Detection__7b55d87bf0fcf6d787a440d59bf4617e6d73f10f5b1bcc1b45736ad0a7a57911.jpg",
+    "paper_title": "VoxDet: Rethinking 3D Semantic Scene Completion as Dense Object Detection",
+    "source_file": "00279_VoxDet_Rethinking_3D_Semantic_Scene_Completion_as_Dense_Object_Detection",
+    "page_idx": 4,
+    "section": "4.2 Spatially-decoupled Voxel Encoder",
+    "bbox": [
+      174,
+      89,
+      821,
+      203
+    ],
+    "quality_score": 10
+  },
+  {
+    "id": "ref_0003",
+    "domain": "Computer Vision",
+    "diagram_type": "Architecture Diagram",
+    "description": "Figure 2: The pipeline of our proposed SQS. In order to adapt the sparse query-based downstream tasks, we design a sparse query-based 3D Gaussian Splatting pre-training paradigm with RGB image and depth as supervision. The pre-trained image encoder can be leveraged during the fine-tuning stage, and we also propose a query interaction module to fully exploit the knowledge encapsulated in the pre-trained queries. Our proposed light-weight pre-training paradigm can be plugged into any sparse query-based downstream tasks to enhance their performance. ",
+    "image_path": "data/spotlight_reference_images/ref_0003_00491_SQS_Enhancing_Sparse_Perception_Models_via_Query-based_Splatting_in_Autonomous_Driving__f7c6f154dc3e45e2f58f5a9111ebf57ead0d19f9e77340cd3838d881af17a916.jpg",
+    "paper_title": "SQS: Enhancing Sparse Perception Models via Query-based Splatting in Autonomous Driving",
+    "source_file": "00491_SQS_Enhancing_Sparse_Perception_Models_via_Query-based_Splatting_in_Autonomous_Driving",
+    "page_idx": 4,
+    "section": "3.3 Gaussian Transformer Decoder and Gaussian Queries",
+    "bbox": [
+      184,
+      89,
+      816,
+      349
+    ],
+    "quality_score": 10
+  },
+  {
+    "id": "ref_0004",
+    "domain": "Natural Language Processing",
+    "diagram_type": "Architecture Diagram",
+    "description": "Figure 2: The framework of ProtInvTree. (a) The four steps of reward-guided tree search—Selection, Expansion, Evalution, and Backpropagation—are illustrated on a partial denoising tree. Each node corresponds to a partially denoised subsequence. After a new node is expanded, “jumpy” denoising is performed to quickly estimate its value, which is then backpropagated along the path in the tree. (b) Illustration of how a sequence is generated step by step. Masked tokens in the sequence are progressively infilling through a focus-and-grounding mechanism. ",
+    "image_path": "data/spotlight_reference_images/ref_0004_00691_ProtInvTree_Deliberate_Protein_Inverse_Folding_with_Reward-guided_Tree_Search__713bbbec11cbef0f1d2c8901e17165fa7db3d1fcf6cfa0d4a8b803d2dccb2ca0.jpg",
+    "paper_title": "ProtInvTree: Deliberate Protein Inverse Folding with Reward-guided Tree Search",
+    "source_file": "00691_ProtInvTree_Deliberate_Protein_Inverse_Folding_with_Reward-guided_Tree_Search",
+    "page_idx": 4,
+    "section": "4.1 Tree-based MDP Formulation",
+    "bbox": [
+      176,
+      92,
+      816,
+      242
+    ],
+    "quality_score": 10
+  },
+  {
+    "id": "ref_0005",
+    "domain": "Graph Learning",
+    "diagram_type": "Architecture Diagram",
+    "description": "Figure 2: Overview. Our CoMCTS trains Mulberry with two alternating phases. In top part, CoMCTS searches reasoning paths iteratively, and in each iteration, it utilizes collective knowledge from multiple MLLMs to jointly (a) expand diverse and complementary candidate subsequent reasoning nodes till the end from a given start node, (b) simulate reasoning outcomes, position error candidate nodes and prune them along with their child nodes, (c) backpropagate to update the score and visit count of each reasoning node in a bottom-up manner, and (d) select the leaf reasoning node with the highest UCB value as next start node. In bottom part, we train the model to learn from the reasoning trees constructed by CoMCTS. ",
+    "image_path": "data/spotlight_reference_images/ref_0005_00738_Mulberry_Empowering_MLLM_with_o1-like_Reasoning_and_Reflection_via_Collective_Monte_Carlo_Tree_Search__7c987fc8cf213eb47a038117cc38e5a170938289a390de4b8d7b6cd88512d505.jpg",
+    "paper_title": "Mulberry: Empowering MLLM with o1-like Reasoning and Reflection via Collective Monte Carlo Tree Search",
+    "source_file": "00738_Mulberry_Empowering_MLLM_with_o1-like_Reasoning_and_Reflection_via_Collective_Monte_Carlo_Tree_Search",
+    "page_idx": 4,
+    "section": "3.1 CoMCTS for effective reasoning",
+    "bbox": [
+      189,
+      87,
+      808,
+      340
+    ],
+    "quality_score": 10
+  },
+  {
+    "id": "ref_0006",
+    "domain": "Computer Vision",
+    "diagram_type": "Architecture Diagram",
+    "description": "Figure 3: Overview of our MesaTask Framework. 1) Task-to-Scene Generation (upper-left). Given a task instruction, we extract detailed task information including environment, sub-goals, and task-relevant objects. A structured spatial reasoning chain performs object list completion, interrelation inference, and scene graph construction, which guides the generation of 3D layouts. Final scenes are obtained via 3D asset retrieval. 2) Reasoning Data Construction (bottom). Based on scene graphs and descriptions of our MesaTask-10K dataset, A multimodal LLM is leveraged to produce task instructions, detailed task information, and complete object lists and interrelations. 3) DPO Data Construction (upper right). To enable DPO training, we generate negative examples by randomly perturbing object positions or relations and removing key objects from normal layouts. ",
+    "image_path": "data/spotlight_reference_images/ref_0006_00981_MesaTask_Towards_Task-Driven_Tabletop_Scene_Generation_via_3D_Spatial_Reasoning__ddce4bdb68a1689579a491b5a31349db83e5046fbb5424a45dc0883d4115e7d5.jpg",
+    "paper_title": "MesaTask: Towards Task-Driven Tabletop Scene Generation via 3D Spatial Reasoning",
+    "source_file": "00981_MesaTask_Towards_Task-Driven_Tabletop_Scene_Generation_via_3D_Spatial_Reasoning",
+    "page_idx": 5,
+    "section": "4.2 Spatial Reasoning Chain",
+    "bbox": [
+      181,
+      88,
+      816,
+      353
+    ],
+    "quality_score": 10
+  },
+  {
+    "id": "ref_0007",
+    "domain": "Computer Vision",
+    "diagram_type": "Architecture Diagram",
+    "description": "Figure 2: Overview of OmniSync. A mask-free training paradigm employs timestep-dependent sampling to predict the lip-synchronized targets $V _ { a b }$ . During inference, progressive noise initialization and dynamic spatiotemporal CFG ensure consistent head pose and precise lip synchronization. ",
+    "image_path": "data/spotlight_reference_images/ref_0007_01003_OmniSync_Towards_Universal_Lip_Synchronization_via_Diffusion_Transformers__28d606ccd79ed54496343219767701efb0f445058d39887c1cf629a800942f77.jpg",
+    "paper_title": "OmniSync: Towards Universal Lip Synchronization via Diffusion Transformers",
+    "source_file": "01003_OmniSync_Towards_Universal_Lip_Synchronization_via_Diffusion_Transformers",
+    "page_idx": 3,
+    "section": "3.2 Mask-Free Training Paradigm",
+    "bbox": [
+      173,
+      77,
+      821,
+      362
+    ],
+    "quality_score": 10
+  },
+  {
+    "id": "ref_0008",
+    "domain": "Natural Language Processing",
+    "diagram_type": "Architecture Diagram",
+    "description": "Figure 2: The overall pipeline of the SRS module. The multivariate time series is processed with Channel Independent strategy, the Selective Patching first adaptively chooses proper patches from all potential candidate patches. Then the Dynamic Reassembly dertermines the order of the selected patches. Both the Selective Patching and Dynamic Reassembly are gradient-based and learnable. Finally, the Adaptive Fusion integrates the embeddings from Conventional Patching and Dynamic Reassembly, adds the position embeddings to construct the final representations. The subsequent backbones can be used directly without changes, so that the SRS module is a modular plugin. ",
+    "image_path": "data/spotlight_reference_images/ref_0008_01041_Enhancing_Time_Series_Forecasting_through_Selective_Representation_Spaces_A_Patch_Perspective__ea910fb78f4d4027ff7fe9a63cbbc68a7038ee2e9f4250c2f773c631f265b079.jpg",
+    "paper_title": "Enhancing Time Series Forecasting through Selective Representation Spaces: A Patch Perspective",
+    "source_file": "01041_Enhancing_Time_Series_Forecasting_through_Selective_Representation_Spaces_A_Patch_Perspective",
+    "page_idx": 3,
+    "section": "3.1 Structure Overview",
+    "bbox": [
+      176,
+      88,
+      820,
+      287
+    ],
+    "quality_score": 10
+  },
+  {
+    "id": "ref_0009",
+    "domain": "Natural Language Processing",
+    "diagram_type": "Architecture Diagram",
+    "description": "Figure 3: The detailed architecture of the SRS module. The Selective Patching allows sampling with replacement. It scans all the potential patches with stride equals 1, generates $n$ scores for each, then retrieves the patches with max scores in each sampling. Then the Dynamic Reassembly generates scores for selected patches, and sorts them based on the scores to determine the sequence. In the Embedding phase, both the embeddings from the Dynamic Reassembly and Conventional Patching are adaptively fused to form the representations. ",
+    "image_path": "data/spotlight_reference_images/ref_0009_01041_Enhancing_Time_Series_Forecasting_through_Selective_Representation_Spaces_A_Patch_Perspective__4cc6ca3e3fa15065b6a1781e9a7f814d67a46649325289b63c9bea4072020f4c.jpg",
+    "paper_title": "Enhancing Time Series Forecasting through Selective Representation Spaces: A Patch Perspective",
+    "source_file": "01041_Enhancing_Time_Series_Forecasting_through_Selective_Representation_Spaces_A_Patch_Perspective",
+    "page_idx": 4,
+    "section": "3.2 Selective Patching",
+    "bbox": [
+      176,
+      88,
+      821,
+      266
+    ],
+    "quality_score": 10
+  },
+  {
+    "id": "ref_0010",
+    "domain": "Computer Vision",
+    "diagram_type": "Architecture Diagram",
+    "description": "Figure 6: Architecture of DiCo, which consists of (b) DiCo Block, (c) Conv Module, and (d) Compact Channel Attention (CCA). DConv denotes depthwise convolution. ",
+    "image_path": "data/spotlight_reference_images/ref_0010_01112_DiCo_Revitalizing_ConvNets_for_Scalable_and_Efficient_Diffusion_Modeling__589d9f3ec341480c16ec00bf41076999cd0ce6c1526b97e71eb9c8ffe33b1a1b.jpg",
+    "paper_title": "DiCo: Revitalizing ConvNets for Scalable and Efficient Diffusion Modeling",
+    "source_file": "01112_DiCo_Revitalizing_ConvNets_for_Scalable_and_Efficient_Diffusion_Modeling",
+    "page_idx": 5,
+    "section": "3.2 Network Architecture",
+    "bbox": [
+      184,
+      87,
+      823,
+      339
+    ],
+    "quality_score": 10
+  },
+  {
+    "id": "ref_0011",
+    "domain": "Graph Learning",
+    "diagram_type": "Architecture Diagram",
+    "description": "Figure 1: (a) Overview of the Proposed Approach. Rather than performing tensor products over edges by combining node features and distances, E2Former leverages two key concepts: binomial local expansion and Wigner $6 j$ recoupling. The former represents edge directions in terms of node positions, while the latter reorders the sequence of tensor product operations. Together, the computational complexity of the tensor product is reduced from $O ( | \\mathcal { E } | )$ to $O ( | \\nu | )$ . $\\otimes$ denotes the Clebsch-Gorden tensor product, and $\\otimes ^ { 6 j }$ denotes the CG tensor product where each path is parameterized by a weight governed by the Wigner- $6 j$ coefficients. $\\mathbf { ( b ) }$ Illustration of two equivalent ways to couple the tensor product of three representations: sequentially coupling two tensors before the third (left) or reordering the coupling sequence (right), with equivalence established via the Wigner $6 j$ recoupling. ",
+    "image_path": "data/spotlight_reference_images/ref_0011_01591_E2Former_An_Efficient_and_Equivariant_Transformer_with_Linear-Scaling_Tensor_Products__b501bcad7830654e421726b37ea0d89207d68c72f0f6aa9179fec65e0c71b205.jpg",
+    "paper_title": "E2Former: An Efficient and Equivariant Transformer with Linear-Scaling Tensor Products",
+    "source_file": "01591_E2Former_An_Efficient_and_Equivariant_Transformer_with_Linear-Scaling_Tensor_Products",
+    "page_idx": 2,
+    "section": "2 Background and Preliminaries",
+    "bbox": [
+      171,
+      88,
+      821,
+      434
+    ],
+    "quality_score": 10
+  },
+  {
+    "id": "ref_0012",
+    "domain": "Natural Language Processing",
+    "diagram_type": "Architecture Diagram",
+    "description": "Figure 5: Overview of the E2Former architecture. (a) The main network alternates E2Attention blocks with feedforward layers, repeatedly refining node embeddings from a 3D molecular graph. (b) Within each E2Attention block, scalarized queries/keys (via ir2scalar) are combined with distancedependent features (RBF) and convolutions (6j-TP), updating the node embeddings equivariantly. (c) The final readout incorporates atomic types and radial/spherical expansions (RBF, SH) into a gated projection that produces the per-atom output $y _ { i }$ . ",
+    "image_path": "data/spotlight_reference_images/ref_0012_01591_E2Former_An_Efficient_and_Equivariant_Transformer_with_Linear-Scaling_Tensor_Products__fb4694d88a5097ee72a936634a832ced85d11e90079a4fabc3f1b8c28f24e5d6.jpg",
+    "paper_title": "E2Former: An Efficient and Equivariant Transformer with Linear-Scaling Tensor Products",
+    "source_file": "01591_E2Former_An_Efficient_and_Equivariant_Transformer_with_Linear-Scaling_Tensor_Products",
+    "page_idx": 27,
+    "section": "G Additional Lemmas",
+    "bbox": [
+      191,
+      143,
+      810,
+      424
+    ],
+    "quality_score": 10
+  },
+  {
+    "id": "ref_0013",
+    "domain": "Computer Vision",
+    "diagram_type": "Architecture Diagram",
+    "description": "Figure 2: Overview of FSDrive. Taking the currently surround images and task instructions as input, MLLM is trained in the form of next token prediction. MLLM predicts the future spatio-temporal CoT, and then generates trajectory based on the current observation and predicted future. ",
+    "image_path": "data/spotlight_reference_images/ref_0013_01620_FutureSightDrive_Thinking_Visually_with_Spatio-Temporal_CoT_for_Autonomous_Driving__8a4bffe9a69ef0d2bc0ced518bccdb3146d38727d7fc7402a418b6227a78bcfb.jpg",
+    "paper_title": "FutureSightDrive: Thinking Visually with Spatio-Temporal CoT for Autonomous Driving",
+    "source_file": "01620_FutureSightDrive_Thinking_Visually_with_Spatio-Temporal_CoT_for_Autonomous_Driving",
+    "page_idx": 4,
+    "section": "3.2 Unified pre-training paradigm for visual generation and understanding",
+    "bbox": [
+      181,
+      90,
+      820,
+      260
+    ],
+    "quality_score": 10
+  },
+  {
+    "id": "ref_0014",
+    "domain": "Computer Vision",
+    "diagram_type": "Architecture Diagram",
+    "description": "Figure 2: The overview of our proposed G-Memory. ",
+    "image_path": "data/spotlight_reference_images/ref_0014_01659_G-Memory_Tracing_Hierarchical_Memory_for_Multi-Agent_Systems__48772f699bccd9ecf7285d9f2c4af85d34d60b7ee6b2cbd681278611869db12b.jpg",
+    "paper_title": "G-Memory: Tracing Hierarchical Memory for Multi-Agent Systems",
+    "source_file": "01659_G-Memory_Tracing_Hierarchical_Memory_for_Multi-Agent_Systems",
+    "page_idx": 4,
+    "section": "4 G-Memory",
+    "bbox": [
+      173,
+      88,
+      825,
+      371
+    ],
+    "quality_score": 10
+  },
+  {
+    "id": "ref_0015",
+    "domain": "Reinforcement Learning",
+    "diagram_type": "Architecture Diagram",
+    "description": "Figure 3: Mesh-RFT Framework Overview. The pipeline comprises three stages: 1) Mesh Generation Pre-training using an Hourglass AutoRegressive Transformer and a Shape Encoder; 2) Preference Dataset Construction where a pretrained model generates candidate meshes, and a topology-aware score system establishes preference pairs; and 3) Mesh Generation Post-training which employs Mask DPO with reference and policy networks for subsequent refinement. ",
+    "image_path": "data/spotlight_reference_images/ref_0015_01839_Mesh-RFT_Enhancing_Mesh_Generation_via_Fine-grained_Reinforcement_Fine-Tuning__4d93550a61cdae636652e7cd1ca974c21c7fca1e8eb6eaa6fa2e03100f1d0f68.jpg",
+    "paper_title": "Mesh-RFT: Enhancing Mesh Generation via Fine-Grained Reinforcement Fine-Tuning",
+    "source_file": "01839_Mesh-RFT_Enhancing_Mesh_Generation_via_Fine-grained_Reinforcement_Fine-Tuning",
+    "page_idx": 3,
+    "section": "3 Method",
+    "bbox": [
+      174,
+      87,
+      825,
+      359
+    ],
+    "quality_score": 10
+  },
+  {
+    "id": "ref_0016",
+    "domain": "Computer Vision",
+    "diagram_type": "Architecture Diagram",
+    "description": "Figure 2: Framework for representation extraction, neural encoding model, and JNE Computation. a. Extract ANN representations from images using the CLIP image encoder. b. Use the extracted representations in (linear/nonlinear) neural encoding model to predict brain responses to images. c. Compute the Jacobian matrix to represent the mapping relationship between inputs and outputs of the neural encoding model. Further, calculate the mean, sum, and standard deviation of the Jacobian matrix to obtain the JNE metric. ",
+    "image_path": "data/spotlight_reference_images/ref_0016_01864_Jacobian-Based_Interpretation_of_Nonlinear_Neural_Encoding_Model__c9ac984c977d21aff284dcfbacf7bdfea345cc73096a3f28d624b026654e1740.jpg",
+    "paper_title": "Jacobian-Based Interpretation of Nonlinear Neural Encoding Model",
+    "source_file": "01864_Jacobian-Based_Interpretation_of_Nonlinear_Neural_Encoding_Model",
+    "page_idx": 3,
+    "section": "2.4 Jacobian-based Nonlinearity Evaluation Index",
+    "bbox": [
+      178,
+      88,
+      821,
+      244
+    ],
+    "quality_score": 10
+  },
+  {
+    "id": "ref_0017",
+    "domain": "Computer Vision",
+    "diagram_type": "Architecture Diagram",
+    "description": "Figure 2: Overview of OnlineSplatter Pipeline. The input to our framework consists of a stream of RGB images $\\{ V _ { t } \\} _ { t = 0 } ^ { N }$ , where object masks $\\{ M _ { t } \\} _ { t = 0 } ^ { N }$ are generated and applied to remove background on-the-fly using an off-the-shelf online video segmentation (OVS) module running alongside our framework. At each timestep $t$ , OnlineSplatter processes the input frame $V _ { t }$ by first patchifying it into patch tokens. These tokens are then fed into a transformer-based architecture, which directly reasons and outputs pixel-aligned 3D Gaussian representations in a canonical space. Central to our method is object memory, an implicit module based on cross-attention, which is queried and updated at every timestep. This memory enables the incremental reconstruction of the object, consistently refining the object representation $( \\mathbf { G } _ { o b j , t } ^ { 4 N } )$ as new observations arrive in a fully feed-forward manner. ",
+    "image_path": "data/spotlight_reference_images/ref_0017_02109_OnlineSplatter_Pose-Free_Online_3D_Reconstruction_for_Free-Moving_Objects__abe4e12f0fc9a7487c6c5774f5ead6b391ede9f832960b5ce462ceb786534a0d.jpg",
+    "paper_title": "OnlineSplatter: Pose-Free Online 3D Reconstruction for Free-Moving Objects",
+    "source_file": "02109_OnlineSplatter_Pose-Free_Online_3D_Reconstruction_for_Free-Moving_Objects",
+    "page_idx": 3,
+    "section": "3.1 OnlineSplatter Pipeline",
+    "bbox": [
+      174,
+      88,
+      825,
+      287
+    ],
+    "quality_score": 10
+  },
+  {
+    "id": "ref_0018",
+    "domain": "Natural Language Processing",
+    "diagram_type": "Architecture Diagram",
+    "description": "Figure 4: Diagram of RobustMerge. Tasks are divided into seen and unseen ones. Checkpoints of seen tasks are trained employing the standard individual training and are merged following the pipeline of inter-parameter adaptation. During inference, the merged model is required to both enhance seen tasks and be generalizable to unseen tasks with an unknown distribution. ",
+    "image_path": "data/spotlight_reference_images/ref_0018_02239_RobustMerge_Parameter-Efficient_Model_Merging_for_MLLMs_with_Direction_Robustness__45b74fc957d305067e6f46f00bc32c9ee0889b7dc7e18b4c46913d263c1d8c16.jpg",
+    "paper_title": "RobustMerge: Parameter-Efficient Model Merging for MLLMs with Direction Robustness",
+    "source_file": "02239_RobustMerge_Parameter-Efficient_Model_Merging_for_MLLMs_with_Direction_Robustness",
+    "page_idx": 4,
+    "section": "3.2 Motivation and Observation",
+    "bbox": [
+      192,
+      89,
+      807,
+      314
+    ],
+    "quality_score": 10
+  },
+  {
+    "id": "ref_0019",
+    "domain": "Graph Learning",
+    "diagram_type": "Architecture Diagram",
+    "description": "Figure 2: Overall framework of MDReID. MDReID is designed to support retrieval across arbitrary modality combinations. It disentangles features into shared and specific components to boost performance in both matched and mismatched scenarios. Additionally, by leveraging representation orthogonality loss (ROL) and knowledge discrepancy loss (KDL), MDReID refines feature separation and enhances retrieval robustness. ",
+    "image_path": "data/spotlight_reference_images/ref_0019_02373_MDReID_Modality-Decoupled_Learning_for_Any-to-Any_Multi-Modal_Object_Re-Identification__517a2ed3f7dd16e048d526da7807ac8b1b73cdb062b79021b7047dd0b467ba9a.jpg",
+    "paper_title": "MDReID: Modality-Decoupled Learning for Any-to-Any Multi-Modal Object Re-Identification",
+    "source_file": "02373_MDReID_Modality-Decoupled_Learning_for_Any-to-Any_Multi-Modal_Object_Re-Identification",
+    "page_idx": 3,
+    "section": "3.1 MDReID: Any-to-any Object ReID",
+    "bbox": [
+      179,
+      93,
+      820,
+      364
+    ],
+    "quality_score": 10
+  },
+  {
+    "id": "ref_0020",
+    "domain": "Computer Vision",
+    "diagram_type": "Architecture Diagram",
+    "description": "Figure 2: Overview of Our Method. (a) XNOR-based spiking self-attention. We illustrate the computation flow for $\\mathbf { Q }$ and $\\mathbf { K }$ in a PyTorch-style notation. (b) Gray-PE. Position indices differing by $2 ^ { n }$ exhibit a consistent Hamming distance on their Gray code representations. Gray-PE is implemented by concatenating $G ( l )$ along the $D$ dimension on both $\\mathbf { Q }$ and $\\mathbf { K }$ . (c) Log-PE. A preassigned relative distance encoding map $\\mathbf { R } _ { i , j } \\in \\mathbb { N } _ { 0 }$ is added to the original attention map AttnMap. (d) 2D Form of Gray-PE. A 2D RPE is more suitable than the 1D version for image patches, as it captures the spatial relationships more effectively. ",
+    "image_path": "data/spotlight_reference_images/ref_0020_03077_Toward_Relative_Positional_Encoding_in_Spiking_Transformers__bdb178031ec8d263c3a5388d900e974b8ce39ae5759a6611f688a57e22173fa5.jpg",
+    "paper_title": "Toward Relative Positional Encoding in Spiking Transformers",
+    "source_file": "03077_Toward_Relative_Positional_Encoding_in_Spiking_Transformers",
+    "page_idx": 4,
+    "section": "3.5 Gray Code",
+    "bbox": [
+      173,
+      87,
+      818,
+      364
+    ],
+    "quality_score": 10
+  },
+  {
+    "id": "ref_0021",
+    "domain": "Computer Vision",
+    "diagram_type": "Training Diagram",
+    "description": "Figure 1: Neural Atlas Graphs - A NAG represents dynamic scenes (a) as a graph of moving 3D planes (one per object/background). Each plane undergoes rigid transformations and encodes viewdependent appearance/transparency using neural fields ${ \\mathcal { F } } ( { \\mathfrak { b } } )$ along a learned trajectory $g _ { i }$ . The planar optical flow $f _ { i }$ models non-rigid motion and parallax, while learning the representation and rendering is done via opacity-weighted ray casting of $C _ { i , t }$ , $\\mathrm { A } _ { i , t }$ using position based $\\mathbf { Z }$ -buffering. ",
+    "image_path": "data/spotlight_reference_images/ref_0021_03670_Neural_Atlas_Graphs_for_Dynamic_Scene_Decomposition_and_Editing__16f8fc865baed696e798502de56f3b473dbf2b0b6aa3c1286f384de53c524b97.jpg",
+    "paper_title": "Neural Atlas Graphs for Dynamic Scene Decomposition and Editing",
+    "source_file": "03670_Neural_Atlas_Graphs_for_Dynamic_Scene_Decomposition_and_Editing",
+    "page_idx": 3,
+    "section": "3.2 Image Formation",
+    "bbox": [
+      173,
+      88,
+      826,
+      256
+    ],
+    "quality_score": 10
+  },
+  {
+    "id": "ref_0022",
+    "domain": "Reinforcement Learning",
+    "diagram_type": "Flowchart",
+    "description": "Figure 1: A conceptual illustration of STITCH-OPE, with novel contributions highlighted in orange. A: Behavior data is sliced into partial trajectories of length $w$ . B: The data is fed to a conditional diffusion model taking a $w$ -length sequence of Gaussian noise $\\epsilon$ and state $s _ { t }$ as inputs, and applies the backward diffusion process to predict the behavior trajectory of length $w$ beginning in state $s _ { t }$ . C: To evaluate policies, STITCH-OPE also trains a neural network on the behavior transitions to predict the immediate reward. D: It then applies guided diffusion on the pretrained diffusion model to generate a batch of partial target trajectories of length $w$ , where the guidance function incorporates the score function of the target policy and the behavior policy. E: The guided partial trajectories are stitched end-to-end to produce full-length target trajectories. Finally, the guided trajectories are evaluated using the empirical reward function $\\hat { R } ( s , a )$ , and averaged to estimate the value of the target policy. ",
+    "image_path": "data/spotlight_reference_images/ref_0022_03671_STITCH-OPE_Trajectory_Stitching_with_Guided_Diffusion_for_Off-Policy_Evaluation__6e9c875dbc74a8b39bc947de3b928f8a29f7c6db9b03d726a62a961ba0c2fdd3.jpg",
+    "paper_title": "STITCH-OPE: Trajectory Stitching with Guided Diffusion for Off-Policy Evaluation",
+    "source_file": "03671_STITCH-OPE_Trajectory_Stitching_with_Guided_Diffusion_for_Off-Policy_Evaluation",
+    "page_idx": 4,
+    "section": "3.1 Guided Diffusion for Off-Policy Evaluation",
+    "bbox": [
+      186,
+      87,
+      818,
+      296
+    ],
+    "quality_score": 10
+  },
+  {
+    "id": "ref_0023",
+    "domain": "Computer Vision",
+    "diagram_type": "Architecture Diagram",
+    "description": "Figure 2: Overview of the proposed scMRDR. We employ $\\beta$ -VAE to disentangle omics-specific and omics-shared latent representations, and impose isometric loss and adversarial training as regularization to encourage modality integration and bio-conservation. ",
+    "image_path": "data/spotlight_reference_images/ref_0023_04013_scMRDR_A_scalable_and_flexible_framework_for_unpaired_single-cell_multi-omics_data_integration__85cde1b5a410b0d3275a5c0fa81dfe69e2c83c485c9917c296502a6485e2f68b.jpg",
+    "paper_title": "scMRDR: A Scalable and Flexible Framework for Unpaired Single-Cell Multi-Omics Data Integration",
+    "source_file": "04013_scMRDR_A_scalable_and_flexible_framework_for_unpaired_single-cell_multi-omics_data_integration",
+    "page_idx": 3,
+    "section": "3.1 Preliminary: Disentangled VAE",
+    "bbox": [
+      187,
+      89,
+      823,
+      330
+    ],
+    "quality_score": 10
+  },
+  {
+    "id": "ref_0024",
+    "domain": "Natural Language Processing",
+    "diagram_type": "Architecture Diagram",
+    "description": "Figure 2: Transformer Copilot Framework. The overall framework comprises three key components: (1) Copilot Model Design, (2) Training Paradigm, and (3) Inference Paradigm. ",
+    "image_path": "data/spotlight_reference_images/ref_0024_04165_Transformer_Copilot_Learning_from_The_Mistake_Log_in_LLM_Fine-tuning__8d1e804f51825d9760a37b8d1ca027a61deecc5e33fc172f0c1789814527c37e.jpg",
+    "paper_title": "Transformer Copilot: Learning from The Mistake Log in LLM Fine-tuning",
+    "source_file": "04165_Transformer_Copilot_Learning_from_The_Mistake_Log_in_LLM_Fine-tuning",
+    "page_idx": 3,
+    "section": "3.1 The Copilot Model Design",
+    "bbox": [
+      176,
+      88,
+      823,
+      248
+    ],
+    "quality_score": 10
+  },
+  {
+    "id": "ref_0025",
+    "domain": "Computer Vision",
+    "diagram_type": "Architecture Diagram",
+    "description": "Figure 4: Overview of the GeRaF framework. (1) Lensless sampling replaces ray-based methods. (2) A neural implicit model predicts geometry, reflectivity, and power. (3) RF volumetric rendering simulates physical signal propagation. (4) Matched filtering produces MF power images (heatmaps). (5) An L2 loss compares the rendered and ground truth power for end-to-end training. ",
+    "image_path": "data/spotlight_reference_images/ref_0025_04571_GeRaF_Neural_Geometry_Reconstruction_from_Radio_Frequency_Signals__e096c21c76e1eb88c8d865f73e832e8e9246cddec17f62b5d85bc051caa55165.jpg",
+    "paper_title": "GeRaF: Neural Geometry Reconstruction from Radio Frequency Signals",
+    "source_file": "04571_GeRaF_Neural_Geometry_Reconstruction_from_Radio_Frequency_Signals",
+    "page_idx": 4,
+    "section": "3 Technical Background",
+    "bbox": [
+      176,
+      88,
+      825,
+      267
+    ],
+    "quality_score": 10
+  },
+  {
+    "id": "ref_0026",
+    "domain": "Computer Vision",
+    "diagram_type": "Architecture Diagram",
+    "description": "Figure 3: An overview of the proposed HopaDIFF, which integrates two complementary diffusionbased branches, i.e., holistic and partial branches for action segmentation with target-referenced awareness. To improve controllability and segmentation precision, we introduce HP-xLSTM, a cross-input gated module designed for effective exchange between holistic and partial features, and propose a novel Fourier-based conditioning mechanism to inject frequency-domain control signals into the generative process. During training, the two branches are individually supervised using ground-truth action labels and temporal boundary annotations. ",
+    "image_path": "data/spotlight_reference_images/ref_0026_04647_HopaDIFF_Holistic-Partial_Aware_Fourier_Conditioned_Diffusion_for_Referring_Human_Action_Segmentation_in_Multi-Person_Sc__0e15e7e99b52ccbc157e3ee04a6de2238b23ccd60543102fc2a70eddb12e5e41.jpg",
+    "paper_title": "HopaDIFF: Holistic-Partial Aware Fourier Conditioned Diffusion for Referring Human Action Segmentation in Multi-Person Scenarios",
+    "source_file": "04647_HopaDIFF_Holistic-Partial_Aware_Fourier_Conditioned_Diffusion_for_Referring_Human_Action_Segmentation_in_Multi-Person_Sc",
+    "page_idx": 4,
+    "section": "4.1 Preliminaries.",
+    "bbox": [
+      173,
+      88,
+      825,
+      236
+    ],
+    "quality_score": 10
+  },
+  {
+    "id": "ref_0027",
+    "domain": "Computer Vision",
+    "diagram_type": "Architecture Diagram",
+    "description": "Figure 2: Overview of the CSBrain architecture. After EEG signal preprocessing, the Crossscale Spatiotemporal Tokenization (CST) module encodes multi-resolution features within localized temporal windows and brain regions to produce robust, scale-aware tokens. The Structured Sparse Attention (SSA) module then captures long-range dependencies across windows and regions in a structured and efficient manner. CST and SSA are alternately stacked for $L$ layers to progressively integrate cross-scale spatiotemporal dependencies to build unified and robust representations for diverse BCI tasks with varying spatiotemporal scales. Finally, a lightweight task head is appended for reconstruction, classification, or regression. ",
+    "image_path": "data/spotlight_reference_images/ref_0027_04717_CSBrain_A_Cross-scale_Spatiotemporal_Brain_Foundation_Model_for_EEG_Decoding__327e1ef5f11138cef78e3dd270f09eea700aedb3c5a64cf848b125d13e4e5f08.jpg",
+    "paper_title": "CSBrain: A Cross-scale Spatiotemporal Brain Foundation Model for EEG Decoding",
+    "source_file": "04717_CSBrain_A_Cross-scale_Spatiotemporal_Brain_Foundation_Model_for_EEG_Decoding",
+    "page_idx": 3,
+    "section": "2.1 EEG Signal Preprocessing",
+    "bbox": [
+      196,
+      92,
+      805,
+      324
+    ],
+    "quality_score": 10
+  },
+  {
+    "id": "ref_0028",
+    "domain": "Natural Language Processing",
+    "diagram_type": "Training Diagram",
+    "description": "Figure 1: Evolution of ST modeling: (a) Traditional coupled STGNN design; (b) Joint ST pretraining in STFMs with tokens from different space and time; (c) FactoST’s factorized paradigm. ",
+    "image_path": "data/spotlight_reference_images/ref_0028_05129_Learning_to_Factorize_Spatio-Temporal_Foundation_Models__ef11d1775e9863839bc4dfaf8711bf474ef80365303220ba92781b579879e7a5.jpg",
+    "paper_title": "Learning to Factorize Spatio-Temporal Foundation Models",
+    "source_file": "05129_Learning_to_Factorize_Spatio-Temporal_Foundation_Models",
+    "page_idx": 1,
+    "section": "1 Introduction",
+    "bbox": [
+      179,
+      88,
+      821,
+      202
+    ],
+    "quality_score": 10
+  },
+  {
+    "id": "ref_0029",
+    "domain": "Computer Vision",
+    "diagram_type": "Architecture Diagram",
+    "description": "Figure 2: The EDELINE world model includes three principal components: (1) A U-Net-like Next-Frame Predictor enhanced by adaptive group normalization and cross-attention mechanisms, (2) A Recurrent Embedding Module built on Mamba architecture for temporal sequence processing, and (3) A Reward/Termination Predictor implemented through linear layers. The EDELINE framework uses shared hidden representations across the components for efficient world model learning. ",
+    "image_path": "data/spotlight_reference_images/ref_0029_05428_EDELINE_Enhancing_Memory_in_Diffusion-based_World_Models_via_Linear-Time_Sequence_Modeling__57df86687acccd0bad49997d26a4a442d6d09e2381e5a570d1d1e7efd02cf303.jpg",
+    "paper_title": "EDELINE: Enhancing Memory in Diffusion-based World Models via Linear-Time Sequence Modeling",
+    "source_file": "05428_EDELINE_Enhancing_Memory_in_Diffusion-based_World_Models_via_Linear-Time_Sequence_Modeling",
+    "page_idx": 4,
+    "section": "4 Motivational Experiments",
+    "bbox": [
+      174,
+      88,
+      818,
+      313
+    ],
+    "quality_score": 10
+  },
+  {
+    "id": "ref_0030",
+    "domain": "Natural Language Processing",
+    "diagram_type": "Architecture Diagram",
+    "description": "Figure 2: Overview of VIST. VIST, a slow-fast token compression framework, efficiently processes long texts by mimicking human skimming. First, the fast visual path converts long context into images and employs a lightweight vision encoder to capture semantically compact visual features. These features are then integrated into the LLM via cross-attention in the slow cognitive path, allowing LLM to focus on salient content for deeper reasoning. To prioritize informative content in text images, VIST employs Frequency-based Masking on text token embeddings from text tokenizer, suppressing high-frequency but low-information token (e.g., “the” and “with”). Such refined embeddings guide the Resampler in extracting critical semantics from the images. ",
+    "image_path": "data/spotlight_reference_images/ref_0030_05467_Vision-centric_Token_Compression_in_Large_Language_Model__056bbf059f83c91ea896c610cef2927606ab780d910996e6cdb293dfaca40ddd.jpg",
+    "paper_title": "Vision-centric Token Compression in Large Language Model",
+    "source_file": "05467_Vision-centric_Token_Compression_in_Large_Language_Model",
+    "page_idx": 3,
+    "section": "3.1 Overall Pipeline",
+    "bbox": [
+      197,
+      89,
+      795,
+      287
+    ],
+    "quality_score": 10
+  },
+  {
+    "id": "ref_0031",
+    "domain": "Reinforcement Learning",
+    "diagram_type": "Architecture Diagram",
+    "description": "Figure 4: The workflow of Repo2Run, involving two phases: the build phase and the record phase. The build phase utilizes a dual-environment architecture: the internal environment with five actions for environment building, while the external environment with three actions assists the internal environment. The record phase converts the validated command sequence into a runnable Dockerfile for reconstructing the executable environment. See Appendix A for more examples of these actions. ",
+    "image_path": "data/spotlight_reference_images/ref_0031_05610_Repo2Run_Automated_Building_Executable_Environment_for_Code_Repository_at_Scale__ea96f359e23ff3f0427d48dd3247314967bb531150d725a7680376b940324680.jpg",
+    "paper_title": "Repo2Run: Automated Building Executable Environment for Code Repository at Scale",
+    "source_file": "05610_Repo2Run_Automated_Building_Executable_Environment_for_Code_Repository_at_Scale",
+    "page_idx": 3,
+    "section": "3 Repo2Run",
+    "bbox": [
+      174,
+      88,
+      825,
+      276
+    ],
+    "quality_score": 10
+  },
+  {
+    "id": "ref_0032",
+    "domain": "Computer Vision",
+    "diagram_type": "Architecture Diagram",
+    "description": "Figure 2: Overview of Shallow Diffuse for T2I Diffusion Models. The server scenario (top left) illustrates watermark embedding during generation using CFG, while the user scenario (bottom left) demonstrates post-generation watermark embedding via DDIM inversion. In both scenarios, the watermark is applied within a low-dimensional subspace (top right), where most of the watermark resides in the null space of $J _ { \\theta , t }$ due to its low dimensionality. The adversarial detection (bottom right) highlights the watermark’s robustness, enabling the detector to retrieve the watermark even under adversarial attacks. ",
+    "image_path": "data/spotlight_reference_images/ref_0032_05774_Shallow_Diffuse_Robust_and_Invisible_Watermarking_through_Low-Dim_Subspaces_in_Diffusion_Models__703f7602f642aa354858ee8cf929888d672a45001a93ac0cb937cd0f4f1b62de.jpg",
+    "paper_title": "Shallow Diffuse: Robust and Invisible Watermarking through Low-Dim Subspaces in Diffusion Models",
+    "source_file": "05774_Shallow_Diffuse_Robust_and_Invisible_Watermarking_through_Low-Dim_Subspaces_in_Diffusion_Models",
+    "page_idx": 3,
+    "section": "2.2 Local Linearity and Intrinsic Low-Dimensionality in PMP",
+    "bbox": [
+      178,
+      87,
+      825,
+      265
+    ],
+    "quality_score": 10
+  },
+  {
+    "id": "ref_0033",
+    "domain": "Natural Language Processing",
+    "diagram_type": "Architecture Diagram",
+    "description": "Figure 2: Algorithm-Hardware Co-Design Diagram of Mozart. Mozart provides an algorithmhardware co-design approach, and we present both the algorithm-level expert clustering & allocation schemes in the left part, and the architecture-level 3.5D chiplet system in the right part. The MoE-LLM parameters are modularized in each decoder layer and mapped to the individual chiplets. ",
+    "image_path": "data/spotlight_reference_images/ref_0033_05814_Mozart_Modularized_and_Efficient_MoE_Training_on_35D_Wafer-Scale_Chiplet_Architectures__dc6b73dd98f93241717e3b658c319f70ab6ad6188c24a147cd052fb2153d656d.jpg",
+    "paper_title": "Mozart: Modularized and Efficient MoE Training on 3.5D Wafer-Scale Chiplet Architectures",
+    "source_file": "05814_Mozart_Modularized_and_Efficient_MoE_Training_on_35D_Wafer-Scale_Chiplet_Architectures",
+    "page_idx": 3,
+    "section": "3.3 Efficient All-to-All Communication",
+    "bbox": [
+      181,
+      74,
+      818,
+      202
+    ],
+    "quality_score": 10
+  },
+  {
+    "id": "ref_0034",
+    "domain": "Computer Vision",
+    "diagram_type": "Architecture Diagram",
+    "description": "Figure 1: The main framework of our proposed TDLSR. Different shapes signify different samples. ",
+    "image_path": "data/spotlight_reference_images/ref_0034_06044_Theory-Driven_Label-Specific_Representation_for_Incomplete_Multi-View_Multi-Label_Learning__4d4bbb3c5cd4edb56f73502b7eac2b526f30bfc883b337d949cb38ee0747ee22.jpg",
+    "paper_title": "Theory-Driven Label-Specific Representation for Incomplete Multi-View Multi-Label Learning",
+    "source_file": "06044_Theory-Driven_Label-Specific_Representation_for_Incomplete_Multi-View_Multi-Label_Learning",
+    "page_idx": 2,
+    "section": "2.1 Problem definition",
+    "bbox": [
+      174,
+      402,
+      821,
+      587
+    ],
+    "quality_score": 10
+  },
+  {
+    "id": "ref_0035",
+    "domain": "Computer Vision",
+    "diagram_type": "Architecture Diagram",
+    "description": "Figure 2: EAG3R network. Left: The DUSt3R (MonST3R) architecture with reference and source views processed via ViT encoder-decoder structure. Middle: Our method (only the upstream branch for the reference image is shown), which includes a lightweight event encoder and fuses event and image features with cross-attention. Right: The Retinex-based enhancement module estimates an illumination map and an SNR confidence map to guide adaptive fusion. ",
+    "image_path": "data/spotlight_reference_images/ref_0035_06067_EAG3R_Event-Augmented_3D_Geometry_Estimation_for_Dynamic_and_Extreme-Lighting_Scenes__8c0d4df1862409d631870861dc2f047a0cd2572e87267d0d3ea58b6c245408fe.jpg",
+    "paper_title": "EAG3R: Event-Augmented 3D Geometry Estimation for Dynamic and Extreme-Lighting Scenes",
+    "source_file": "06067_EAG3R_Event-Augmented_3D_Geometry_Estimation_for_Dynamic_and_Extreme-Lighting_Scenes",
+    "page_idx": 3,
+    "section": "3.1 Preliminary",
+    "bbox": [
+      174,
+      87,
+      823,
+      196
+    ],
+    "quality_score": 10
+  },
+  {
+    "id": "ref_0036",
+    "domain": "Computer Vision",
+    "diagram_type": "Training Diagram",
+    "description": "Figure 3: Event-based photometric consistency loss. Harris corners are detected on the input image to define salient patches. Observed brightness increments are computed by integrating event polarities, while predicted increments are synthesized from image gradients and motion. The loss $\\mathcal { L } _ { \\mathrm { e v e n t } }$ measures their alignment. ",
+    "image_path": "data/spotlight_reference_images/ref_0036_06067_EAG3R_Event-Augmented_3D_Geometry_Estimation_for_Dynamic_and_Extreme-Lighting_Scenes__a50d002b445446ba0c687045ba485e4c96aaf49765198b3f53fb954327df6f4f.jpg",
+    "paper_title": "EAG3R: Event-Augmented 3D Geometry Estimation for Dynamic and Extreme-Lighting Scenes",
+    "source_file": "06067_EAG3R_Event-Augmented_3D_Geometry_Estimation_for_Dynamic_and_Extreme-Lighting_Scenes",
+    "page_idx": 5,
+    "section": "3.3.1 Event-Based Photometric Consistency Loss",
+    "bbox": [
+      250,
+      89,
+      758,
+      246
+    ],
+    "quality_score": 10
+  },
+  {
+    "id": "ref_0037",
+    "domain": "Natural Language Processing",
+    "diagram_type": "Training Diagram",
+    "description": "Figure 3: Causal Data-Prior Training. At each iteration an index $\\psi _ { i } \\sim \\pi$ is sampled (left), yielding the DGP $P ^ { \\bar { \\psi } _ { i } } ( \\mathbf { X } , T , \\{ Y _ { t } \\} _ { t \\in \\mathcal { T } } , Y )$ . From this DGP we simulate an observational context $\\mathcal { D } _ { \\mathrm { o b s } }$ and a query $\\mathbf { \\rho } ( \\mathbf { x } , t ) $ with its true $\\mu _ { t } ( \\mathbf { x } ; \\psi _ { i } )$ (center). Passing $( \\mathbf { x } , t , \\mathcal { D } _ { \\mathrm { o b s } } )$ through the transformer predicts the CEPO-PPD $q _ { \\theta } ( \\cdot \\mid \\mathbf { x } , t , \\mathcal { D } _ { \\mathrm { o b s } } )$ (in yellow), which is derived from an implicit posterior $\\pi ( \\cdot \\mid \\mathcal { D } _ { \\mathrm { o b s } } )$ that is never explicitly computed $( r i g h t )$ . We train $\\theta$ to minimize the causal data-prior loss (bottom). ",
+    "image_path": "data/spotlight_reference_images/ref_0037_06507_CausalPFN_Amortized_Causal_Effect_Estimation_via_In-Context_Learning__8c660a9d9ad153e854bc67151e7df9977e2244fa4ce9bd649c2b08b58db2e30c.jpg",
+    "paper_title": "CausalPFN: Amortized Causal Effect Estimation via In-Context Learning",
+    "source_file": "06507_CausalPFN_Amortized_Causal_Effect_Estimation_via_In-Context_Learning",
+    "page_idx": 4,
+    "section": "3 The Mathematical Framework of CausalPFN",
+    "bbox": [
+      176,
+      88,
+      820,
+      205
+    ],
+    "quality_score": 10
+  },
+  {
+    "id": "ref_0038",
+    "domain": "Optimization / Theory",
+    "diagram_type": "Architecture Diagram",
+    "description": "Figure 2: The framework of MRGC, which introduces three complementary graph manifold learning modules into the GC process: constraining the intrinsic dimension, smoothing classification boundaries via manifold curvature limits, and encouraging class manifold decoupling. These modules address the increase in classification complexity within the condensed graph induced by attacks. ",
+    "image_path": "data/spotlight_reference_images/ref_0038_06527_Robust_Graph_Condensation_via_Classification_Complexity_Mitigation__dedb33c198673910da24a5a2a5794a8228afce42d7b46ff594dab0cac9ee61e0.jpg",
+    "paper_title": "Robust Graph Condensation via Classification Complexity Mitigation",
+    "source_file": "06527_Robust_Graph_Condensation_via_Classification_Complexity_Mitigation",
+    "page_idx": 3,
+    "section": "3.1 Intrinsic Dimension Manifold Regularization",
+    "bbox": [
+      173,
+      88,
+      825,
+      309
+    ],
+    "quality_score": 10
+  },
+  {
+    "id": "ref_0039",
+    "domain": "Computer Vision",
+    "diagram_type": "Architecture Diagram",
+    "description": "Figure 2: Overview of the proposed NSG-VD. Given a reference set of real videos $\\{ { \\bf { x } } ^ { r e } \\}$ and a test video ${ \\bf x } ^ { t e }$ , we estimate their spatial gradients $\\nabla _ { \\mathbf { x } } \\log p ( \\mathbf { x } , t )$ and temporal derivatives $\\partial _ { t } \\log p ( \\mathbf { x } , t )$ via a pre-trained diffusion model $s _ { \\theta }$ , from which we derive their Normalized Spatiotemporal Gradients (NSGs) and calculate the MMD between NSG features of real and test videos as a detection metric. ",
+    "image_path": "data/spotlight_reference_images/ref_0039_06555_Physics-Driven_Spatiotemporal_Modeling_for_AI-Generated_Video_Detection__7960731d2cf65306fb2ccf2b4dc3792ed55197a1c561f04d82e6b487b2023fdf.jpg",
+    "paper_title": "Physics-Driven Spatiotemporal Modeling for AI-Generated Video Detection",
+    "source_file": "06555_Physics-Driven_Spatiotemporal_Modeling_for_AI-Generated_Video_Detection",
+    "page_idx": 3,
+    "section": "3 Modeling Spatiotemporal Dynamics for AI-Generated Video Detection",
+    "bbox": [
+      173,
+      89,
+      825,
+      256
+    ],
+    "quality_score": 10
+  },
+  {
+    "id": "ref_0040",
+    "domain": "Computer Vision",
+    "diagram_type": "Flowchart",
+    "description": "Figure 3: Concept discovery and labeling process of DANCE. (a) Given a training video, we extract S key clips with length $L$ centered at keyframes identified by a keyframe detection algorithm. We then apply a 2D pose estimator to obtain human pose sequences from these key clips. By clustering all pose sequences across the training set, we cluster them to define each cluster as a motion dynamics concept. (b) For each video, we derive binary motion dynamics concept labels by aggregating the cluster assignment tensor across its key clips. (c) To discover object concepts, we query GPT-4o [19] with prompts containing action class names, yielding a set of object concepts for the dataset. (d) Given a video and the object concept set, we compute concept pseudo labels using a vision-language dual encoder. Specifically, we obtain a concept pseudo label vector by multiplying the object concept embedding matrix with the video embedding vector. We can obtain scene concept labels analogously. ",
+    "image_path": "data/spotlight_reference_images/ref_0040_06606_Disentangled_Concepts_Speak_Louder_Than_Words_Explainable_Video_Action_Recognition__fe96a76b160d3861e188cfe5511fee2d4f07eada1ebf92ade017048a3362d5b8.jpg",
+    "paper_title": "Disentangled Concepts Speak Louder Than Words: Explainable Video Action Recognition",
+    "source_file": "06606_Disentangled_Concepts_Speak_Louder_Than_Words_Explainable_Video_Action_Recognition",
+    "page_idx": 4,
+    "section": "3.2.1 Motion Dynamics Concept",
+    "bbox": [
+      176,
+      87,
+      825,
+      328
+    ],
+    "quality_score": 10
+  },
+  {
+    "id": "ref_0041",
+    "domain": "Graph Learning",
+    "diagram_type": "Architecture Diagram",
+    "description": "Figure 2: Architecture illustration of HYPERION. HYPERION comprises Topological Prototypes Hyperspherical Learning (TP-HSL), Hyperspherical Consistency Noise Calibration (HS-CNC) and Geometric-Aware Hyperspherical Purification (GA-HSP). Best viewed in color and zoom in for details. ",
+    "image_path": "data/spotlight_reference_images/ref_0041_07858_HYPERION_Fine-Grained_Hypersphere_Alignment_for_Robust_Federated_Graph_Learning__be29a99497ec2dd4d3a8993ce3edc85c87505a1cabfadc2df234b7e326633ebc.jpg",
+    "paper_title": "HYPERION: Fine-Grained Hypersphere Alignment for Robust Federated Graph Learning",
+    "source_file": "07858_HYPERION_Fine-Grained_Hypersphere_Alignment_for_Robust_Federated_Graph_Learning",
+    "page_idx": 3,
+    "section": "3.1 Framework Overview",
+    "bbox": [
+      183,
+      89,
+      802,
+      306
+    ],
+    "quality_score": 10
+  },
+  {
+    "id": "ref_0042",
+    "domain": "Computer Vision",
+    "diagram_type": "Architecture Diagram",
+    "description": "Figure 2: Pipeline. Our method consists of Image and Text Encoders for extracting multi-view and text features, Gaussian Decoder for decoding pixel-aligned 3D Gaussians, Unified Query Decoder for decoding pixel-aligned 2D cross-view masks, Mutual Benefit Mechanism for enabling bidirectional promotion between reconstruction and understanding tasks, Pixel-Aligned 2D-to-3D Lifting algorithm for obtaining SIU3R field that enables simultaneous understanding and 3D reconstruction. ",
+    "image_path": "data/spotlight_reference_images/ref_0042_07877_SIU3R_Simultaneous_Scene_Understanding_and_3D_Reconstruction_Beyond_Feature_Alignment__4e6a5833ae5b980087c2b2a4288f152fec9b55ec42be718174ed81724ea898ac.jpg",
+    "paper_title": "SIU3R: Simultaneous Scene Understanding and 3D Reconstruction Beyond Feature Alignment",
+    "source_file": "07877_SIU3R_Simultaneous_Scene_Understanding_and_3D_Reconstruction_Beyond_Feature_Alignment",
+    "page_idx": 3,
+    "section": "3.1 Problem Formulation and Pipeline",
+    "bbox": [
+      205,
+      74,
+      792,
+      213
+    ],
+    "quality_score": 10
+  },
+  {
+    "id": "ref_0043",
+    "domain": "Reinforcement Learning",
+    "diagram_type": "Architecture Diagram",
+    "description": "Figure 2: Overview of RepoMaster’s autonomous exploration–execution loop and an example demonstration. The agent begins by analyzing the initial context (Step 1) and specifies a file to inspect (Step 2). For efficient viewing, it extracts only the key information from that file (Step 3) and appends it to the context (Step 4). In the next exploration–execution iteration (Step $6 {  } 2$ , Step $7  3$ ), the agent uses exploration tools to identify additional relevant files and repeats context-aware code exploration. Once it has gathered enough information, RepoMaster alternates between writing and running “.py” scripts, handling errors, and debugging based on feedback until the task is completed. ",
+    "image_path": "data/spotlight_reference_images/ref_0043_08772_RepoMaster_Autonomous_Exploration_and_Understanding_of_GitHub_Repositories_for_Complex_Task_Solving__c5102f7309c920d53df2307418ef99304d083aa3f54140e3fa2e55c6b259378b.jpg",
+    "paper_title": "RepoMaster: Autonomous Exploration and Understanding of GitHub Repositories for Complex Task Solving",
+    "source_file": "08772_RepoMaster_Autonomous_Exploration_and_Understanding_of_GitHub_Repositories_for_Complex_Task_Solving",
+    "page_idx": 5,
+    "section": "3.2.3 Repository Context Initialization",
+    "bbox": [
+      184,
+      89,
+      820,
+      367
+    ],
+    "quality_score": 10
+  },
+  {
+    "id": "ref_0044",
+    "domain": "Computer Vision",
+    "diagram_type": "Flowchart",
+    "description": "Figure 2: Three-stage curation process of MJ-BENCH-VIDEO. ",
+    "image_path": "data/spotlight_reference_images/ref_0044_08831_MJ-Video_Benchmarking_and_Rewarding_Video_Generation_with_Fine-Grained_Video_Preference__75e635ce2d8e5e0690b91f12cda2422729f5d490691b83e8e3e97e80635a298f.jpg",
+    "paper_title": "MJ-VIDEO: Benchmarking and Rewarding Video Generation with Fine-Grained Video Preference",
+    "source_file": "08831_MJ-Video_Benchmarking_and_Rewarding_Video_Generation_with_Fine-Grained_Video_Preference",
+    "page_idx": 2,
+    "section": "2.1 Overview of Evaluation Aspect Objectives",
+    "bbox": [
+      504,
+      210,
+      818,
+      332
+    ],
+    "quality_score": 10
+  },
+  {
+    "id": "ref_0045",
+    "domain": "Machine Learning",
+    "diagram_type": "Architecture Diagram",
+    "description": "Figure 2: Overview of SparseMVC, a framework designed to address varying sparsity across views. ",
+    "image_path": "data/spotlight_reference_images/ref_0045_08849_SparseMVC_Probing_Cross-view_Sparsity_Variations_for_Multi-view_Clustering__a2db56ea4b3f2d64de561e0fe461b0b49389f5dea822175ac4ad074f1e2e29c8.jpg",
+    "paper_title": "SparseMVC: Probing Cross-view Sparsity Variations for Multi-view Clustering",
+    "source_file": "08849_SparseMVC_Probing_Cross-view_Sparsity_Variations_for_Multi-view_Clustering",
+    "page_idx": 2,
+    "section": "3 Method",
+    "bbox": [
+      176,
+      569,
+      823,
+      737
+    ],
+    "quality_score": 10
+  },
+  {
+    "id": "ref_0046",
+    "domain": "Natural Language Processing",
+    "diagram_type": "Architecture Diagram",
+    "description": "Figure 1: Overview of the proposed ATHENA framework. Group-level symbolic utility discovery: Symbolic & semantic constraints library feed an LLM-driven symbolic-optimization engine that iteratively proposes candidate utility functions, scores them with loss $\\mathcal { L } _ { g }$ , and prunes the search via analysis, crossover, and mutation. Red rings in the contour maps illustrate how the feasible solution space shrinks across iterations until the optimal formula $f _ { g } ^ { * }$ is selected. Individual-level semantic adaptation: The optimal group utility $f _ { g } ^ { * }$ seeds a personalized template space. For each individual $i$ , TextGrad computes textual gradients of an individual loss and updates the template $\\mathcal { P } _ { i } ^ { t }$ into a more personalized decision rule $\\mathcal { P } _ { i } ^ { t + 1 }$ . Finally, the optimal $\\mathcal { P } _ { i } ^ { * }$ is used to predict personal decisions. ",
+    "image_path": "data/spotlight_reference_images/ref_0046_09315_Personalized_Decision_Modeling_Utility_Optimization_or_Textualized-Symbolic_Reasoning__56df140d7973f4f1a6286c7cebec84068dc6828711cea2e455416a0d9d381a99.jpg",
+    "paper_title": "Personalized Decision Modeling: Utility Optimization or Textualized-Symbolic Reasoning",
+    "source_file": "09315_Personalized_Decision_Modeling_Utility_Optimization_or_Textualized-Symbolic_Reasoning",
+    "page_idx": 3,
+    "section": "3 Methods",
+    "bbox": [
+      173,
+      87,
+      825,
+      356
+    ],
+    "quality_score": 10
+  },
+  {
+    "id": "ref_0047",
+    "domain": "Computer Vision",
+    "diagram_type": "Architecture Diagram",
+    "description": "Figure 3: Overview of the EGGS framework. We initialize 2D and 3D Gaussians from sparse points obtained via structure-from-motion (SfM) [35, 36]. Their parameters are then jointly optimized using our CUDA-accelerated differentiable hybrid rasterization. To enhance the flexibility of the hybrid representation, Adaptive Type Exchange is introduced to allow each Gaussian to switch between 2D and 3D types during training. Finally, we apply Discrete Wavelet Transform (DWT) [37] and introduce Frequency-Decoupled Optimization to balance geometric accuracy and appearance fidelity. ",
+    "image_path": "data/spotlight_reference_images/ref_0047_09480_EGGS_Exchangeable_2D3D_Gaussian_Splatting_for_Geometry-Appearance_Balanced_Novel_View_Synthesis__9689645411efcd4495c333462949c56751f3277cd5d1500389c0121fc710deb6.jpg",
+    "paper_title": "EGGS: Exchangeable 2D/3D Gaussian Splatting for Geometry-Appearance Balanced Novel View Synthesis",
+    "source_file": "09480_EGGS_Exchangeable_2D3D_Gaussian_Splatting_for_Geometry-Appearance_Balanced_Novel_View_Synthesis",
+    "page_idx": 3,
+    "section": "3 Method",
+    "bbox": [
+      187,
+      88,
+      807,
+      223
+    ],
+    "quality_score": 10
+  },
+  {
+    "id": "ref_0048",
+    "domain": "Computer Vision",
+    "diagram_type": "Architecture Diagram",
+    "description": "Figure 2: An overview of our method in training and rendering. 4DGT takes a series of monocular frames with poses as input. During training, we subsample the temporal frames at different granularity and use all images in training. We first train 4DGT to predict pixel-aligned Gaussians at coarse resolution in stage one. In stage two training, we pruned a majority of non-activated Gaussians according to the histograms of per-patch activation channels, and densify the Gaussian prediction by increasing the input token samples in both space and time. At inference time, we run the 4DGT network trained after stage two. It can support dense video frames input at high resolution. ",
+    "image_path": "data/spotlight_reference_images/ref_0048_09629_4DGT_Learning_a_4D_Gaussian_Transformer_Using_Real-World_Monocular_Videos__64516a621163af326843f0152bd0cdb8f798d2df70242271249a95e572c7a300.jpg",
+    "paper_title": "4DGT: Learning a 4D Gaussian Transformer Using Real-World Monocular Videos",
+    "source_file": "09629_4DGT_Learning_a_4D_Gaussian_Transformer_Using_Real-World_Monocular_Videos",
+    "page_idx": 3,
+    "section": "3.1 Feed-Forward Dynamic Gaussian Prediction",
+    "bbox": [
+      174,
+      88,
+      820,
+      315
+    ],
+    "quality_score": 10
+  },
+  {
+    "id": "ref_0049",
+    "domain": "Computer Vision",
+    "diagram_type": "Architecture Diagram",
+    "description": "Figure 2: BevSplat Framework Overview. Query ground image Gaussian primitive initialization involves: (1) A pre-trained depth model for initial 3D positions $( \\mu _ { i } )$ . (2) A ResNet and MLP to predict offsets $( \\Delta \\mathbf { p } _ { k } )$ , scale $( \\mathbf { S } _ { k } )$ , rotation $( \\mathbf { R } _ { k } )$ , and opacity $( O _ { k } )$ . (3) A DPT-fine-tuned DINOv2 for extracting semantic features $( \\mathbf { f } _ { i } )$ and confidences $( c _ { i } )$ , which are then bound to these Gaussians. These feature Gaussians are subsequently rendered into BEV feature and confidence maps. Satellite image features are extracted using an identical DINOv2-DPT backbone (note: weights are shared for KITTI but differ for VIGOR, similar to G2SWeakly [1]). Localization is achieved by matching satellite features with the rendered query BEV features via cosine similarity within a sliding window. ",
+    "image_path": "data/spotlight_reference_images/ref_0049_09928_BevSplat_Resolving_Height_Ambiguity_via_Feature-Based_Gaussian_Primitives_for_Weakly-Supervised_Cross-View_Localization__a8331d7a8730d2f09ad6fc49f9b8a2d75ad13192be31bd73dcb2c815b8158115.jpg",
+    "paper_title": "BevSplat: Resolving Height Ambiguity via Feature-Based Gaussian Primitives for Weakly-Supervised Cross-View Localization",
+    "source_file": "09928_BevSplat_Resolving_Height_Ambiguity_via_Feature-Based_Gaussian_Primitives_for_Weakly-Supervised_Cross-View_Localization",
+    "page_idx": 3,
+    "section": "3.1 Geometric Gaussian Primitives Generation",
+    "bbox": [
+      176,
+      84,
+      820,
+      340
+    ],
+    "quality_score": 10
+  },
+  {
+    "id": "ref_0050",
+    "domain": "Natural Language Processing",
+    "diagram_type": "Methodology Figure",
+    "description": "Figure 16: An example of step-by-step CFP generation. ",
+    "image_path": "data/spotlight_reference_images/ref_0050_10276_MigGPT_Harnessing_Large_Language_Models_for_Automated_Migration_of_Out-of-Tree_Linux_Kernel_Patches_Across_Versions__bf73363f403e6fcd1c61336c24e5882a6550413e3f8448bad34b1b38b253e2d8.jpg",
+    "paper_title": "MIGGPT: Harnessing Large Language Models for Automated Migration of Out-of-Tree Linux Kernel Patches Across Versions",
+    "source_file": "10276_MigGPT_Harnessing_Large_Language_Models_for_Automated_Migration_of_Out-of-Tree_Linux_Kernel_Patches_Across_Versions",
+    "page_idx": 29,
+    "section": "F.2 Contextual Information",
+    "bbox": [
+      173,
+      305,
+      825,
+      584
+    ],
+    "quality_score": 10
+  },
+  {
+    "id": "ref_0051",
+    "domain": "Natural Language Processing",
+    "diagram_type": "Architecture Diagram",
+    "description": "Figure 1: The DeLTa framework. As shown in the main objective, we calibrate the output of original decision tree experts $F ( x )$ in the direction of “errors” reducing. Subfig (a) describes the process of refining decision tree rules with LLM, and subfig (b) details the refined rule-guided error correction for decision trees. ",
+    "image_path": "data/spotlight_reference_images/ref_0051_10355_LLM_Meeting_Decision_Trees_on_Tabular_Data__e8ed3c7e09b0287f1ecdd7f6816dc3fd0e7bec186048c777bf1b0e9cc49fadc8.jpg",
+    "paper_title": "LLM Meeting Decision Trees on Tabular Data",
+    "source_file": "10355_LLM_Meeting_Decision_Trees_on_Tabular_Data",
+    "page_idx": 4,
+    "section": "4.1 LLM-based decision tree rules refinement",
+    "bbox": [
+      176,
+      88,
+      828,
+      227
+    ],
+    "quality_score": 10
+  },
+  {
+    "id": "ref_0052",
+    "domain": "Machine Learning",
+    "diagram_type": "Architecture Diagram",
+    "description": "Figure 2: The framework of TrajMamba. ",
+    "image_path": "data/spotlight_reference_images/ref_0052_10520_TrajMamba_An_Efficient_and_Semantic-rich_Vehicle_Trajectory_Pre-training_Model__02d2a7b7aa1ad60cce35445c46fdcb453afa273d8a170ce0abe33ab2c8c6f245.jpg",
+    "paper_title": "TrajMamba: An Efficient and Semantic-rich Vehicle Trajectory Pre-training Model",
+    "source_file": "10520_TrajMamba_An_Efficient_and_Semantic-rich_Vehicle_Trajectory_Pre-training_Model",
+    "page_idx": 3,
+    "section": "4.1 Traj-Mamba Encoder",
+    "bbox": [
+      176,
+      87,
+      818,
+      329
+    ],
+    "quality_score": 10
+  },
+  {
+    "id": "ref_0053",
+    "domain": "Machine Learning",
+    "diagram_type": "Architecture Diagram",
+    "description": "Figure 2: Encode-process-decode architecture of CALM-PDE. The encoder reduces the spatial dimension and increases the channel dimension. It is based on multiple CALM layers, which perform continuous convolution on learnable query points constrained to an epsilon neighborhood. ",
+    "image_path": "data/spotlight_reference_images/ref_0053_10738_CALM-PDE_Continuous_and_Adaptive_Convolutions_for_Latent_Space_Modeling_of_Time-dependent_PDEs__075a498871174e6eda4523156efe1ac3fc4b2117ecb6852f0fd4d2fab21397c1.jpg",
+    "paper_title": "CALM-PDE: Continuous and Adaptive Convolutions for Latent Space Modeling of Time-dependent PDEs",
+    "source_file": "10738_CALM-PDE_Continuous_and_Adaptive_Convolutions_for_Latent_Space_Modeling_of_Time-dependent_PDEs",
+    "page_idx": 3,
+    "section": "3 Background and Preliminaries",
+    "bbox": [
+      176,
+      93,
+      820,
+      318
+    ],
+    "quality_score": 10
+  },
+  {
+    "id": "ref_0054",
+    "domain": "Graph Learning",
+    "diagram_type": "Architecture Diagram",
+    "description": "(b) Linear Attention Module.  Figure 1: Overview of the proposed GT architecture UGCFormer and its linear attention module. (a) The pipeline of UGCFormer, which incorporates a dual cross-attention (DCA) module. First, two basic elements of graphs (i.e., graph topology and node attributes) are independently processed in their respective spaces utilizing distinct projection layers $f _ { A } ( \\cdot )$ and $f _ { X } ( \\cdot )$ . Next, the dual crossattention (DCA) module with residual connections operates across the topology and attribute spaces, updating each representation by integrating correlated features from the other space. Finally, the two representations are combined to produce the final output representation. (b) Illustration of the proposed efficient cross-attention module, where parameters are shared between the query $( \\mathbf { Q } )$ and key $( \\mathbf { K } )$ , and the representations are computed using linearized attention, given by $\\mathbf { Q } ( \\mathbf { K } ^ { \\top } \\mathbf { V } )$ . ",
+    "image_path": "data/spotlight_reference_images/ref_0054_11440_A_Closer_Look_at_Graph_Transformers_Cross-Aggregation_and_Beyond__7b82b794dbb19cd4334009f31fec92816e363cc03a3e2cb6e138b457550a013e.jpg",
+    "paper_title": "A Closer Look at Graph Transformers: Cross-Aggregation and Beyond",
+    "source_file": "11440_A_Closer_Look_at_Graph_Transformers_Cross-Aggregation_and_Beyond",
+    "page_idx": 3,
+    "section": "2.3 Transformers",
+    "bbox": [
+      171,
+      90,
+      650,
+      256
+    ],
+    "quality_score": 10
+  },
+  {
+    "id": "ref_0055",
+    "domain": "Computer Vision",
+    "diagram_type": "Architecture Diagram",
+    "description": "ESCA-Video-87K  Figure 4: Illustration of the construction of ESCA-Video-87K dataset and the model-driven selfsupervised fine-tuning pipeline of our SGClip model. In addition to videos and their natural language captions, ESCA-Video-87K includes object traces, open-domain concepts, and programmatic specifications for 87K video-caption pairs. The dataset is then used to train SGClip via LASER [34], a neurosymbolic learning procedure based on spatial-temporal alignment. ",
+    "image_path": "data/spotlight_reference_images/ref_0055_11977_ESCA_Contextualizing_Embodied_Agents_via_Scene-Graph_Generation__0e5ce61c18a6e2bc6119a8b87d407380d0be2097d18c191dc8377eeb77f485c1.jpg",
+    "paper_title": "ESCA: Contextualizing Embodied Agents via Scene-Graph Generation",
+    "source_file": "11977_ESCA_Contextualizing_Embodied_Agents_via_Scene-Graph_Generation",
+    "page_idx": 5,
+    "section": "3.1 Model Architecture and Inference Time Adaptation",
+    "bbox": [
+      174,
+      101,
+      821,
+      303
+    ],
+    "quality_score": 10
+  },
+  {
+    "id": "ref_0056",
+    "domain": "Machine Learning",
+    "diagram_type": "Architecture Diagram",
+    "description": "Figure 2: Overview of PTA. PTA first partitions the online data into two subsets, and jointly evaluates sample importance considering their prediction bias and confidence levels. It then adapts the pretrained model by weighted entropy minimization and multi-modal attention-guided alignment. ",
+    "image_path": "data/spotlight_reference_images/ref_0056_12716_Partition-Then-Adapt_Combating_Prediction_Bias_for_Reliable_Multi-Modal_Test-Time_Adaptation__4a027fd407718e28e709ab62f53033282bd4c606812da55163e1dd282f0b6afa.jpg",
+    "paper_title": "Partition-Then-Adapt: Combating Prediction Bias for Reliable Multi-Modal Test-Time Adaptation",
+    "source_file": "12716_Partition-Then-Adapt_Combating_Prediction_Bias_for_Reliable_Multi-Modal_Test-Time_Adaptation",
+    "page_idx": 3,
+    "section": "3.2 Partition and Debiased Reweighting",
+    "bbox": [
+      174,
+      92,
+      823,
+      255
+    ],
+    "quality_score": 10
+  },
+  {
+    "id": "ref_0057",
+    "domain": "Computer Vision",
+    "diagram_type": "Architecture Diagram",
+    "description": "Figure 1: DEXTER investigates classifier biases by optimizing a learnable soft prompt to generate text prompts. These text prompts condition a diffusion model to generate images that maximize the activation of the target class in the vision classifier. Images that correctly activate the target class are stored and later captioned for Bias Reasoning. A VLM reasons using these captions to produce human-understandable textual explanations of the model’s decisions and potential biases. More details and clarifications about the pipeline can be found in the Appendices A and B. ",
+    "image_path": "data/spotlight_reference_images/ref_0057_12810_DEXTER_Diffusion-Guided_EXplanations_with_TExtual_Reasoning_for_Vision_Models__9804e1179370803b83e2c51a95654805d588d5c66b128984c9eec7a08b9637ae.jpg",
+    "paper_title": "DEXTER: Diffusion-Guided EXplanations with TExtual Reasoning for Vision Models",
+    "source_file": "12810_DEXTER_Diffusion-Guided_EXplanations_with_TExtual_Reasoning_for_Vision_Models",
+    "page_idx": 3,
+    "section": "3.1 Text pipeline",
+    "bbox": [
+      173,
+      88,
+      823,
+      361
+    ],
+    "quality_score": 10
+  },
+  {
+    "id": "ref_0058",
+    "domain": "Computer Vision",
+    "diagram_type": "Architecture Diagram",
+    "description": "Figure 1: Proposed ML solution for Rubik’s cube solving: (a) proposed multi-agent solver’s process flow; (b) ResMLP neural network architecture; (c) an example of beam search pathfinding on $3 { \\tt X } 3 { \\tt X } 3$ cube’s graph using $W = 4 0$ . ",
+    "image_path": "data/spotlight_reference_images/ref_0058_13240_A_machine_learning_approach_that_beats_Rubiks_cubes__aec92a7999c868664250d8e9aad60b03dbacabd440355bec73af28c512c9d18a.jpg",
+    "paper_title": "A machine learning approach that beats Rubik’s cubes",
+    "source_file": "13240_A_machine_learning_approach_that_beats_Rubiks_cubes",
+    "page_idx": 3,
+    "section": "2 Proposed Machine Learning Approach",
+    "bbox": [
+      173,
+      88,
+      826,
+      410
+    ],
+    "quality_score": 10
+  },
+  {
+    "id": "ref_0059",
+    "domain": "Natural Language Processing",
+    "diagram_type": "Architecture Diagram",
+    "description": "Figure 2: Overview of Audio Flamingo 3, AF-Whisper training, and five-stage curriculum training. ",
+    "image_path": "data/spotlight_reference_images/ref_0059_13594_Audio_Flamingo_3_Advancing_Audio_Intelligence_with_Fully_Open_Large_Audio_Language_Models__5ef6d6bce7058d36800a1158cd2e8ef95d454146e0b4b9cf0affbc5fc04616a6.jpg",
+    "paper_title": "Audio Flamingo 3: Advancing Audio Intelligence with Fully Open Large Audio Language Models",
+    "source_file": "13594_Audio_Flamingo_3_Advancing_Audio_Intelligence_with_Fully_Open_Large_Audio_Language_Models",
+    "page_idx": 3,
+    "section": "3.1 Audio Flamingo 3 Architecture",
+    "bbox": [
+      179,
+      87,
+      816,
+      291
+    ],
+    "quality_score": 10
+  },
+  {
+    "id": "ref_0060",
+    "domain": "Computer Vision",
+    "diagram_type": "Architecture Diagram",
+    "description": "Figure 2: Overall framework of the unsupervised noisy infrared and visible image fusion method. ",
+    "image_path": "data/spotlight_reference_images/ref_0060_14126_Deno-IF_Unsupervised_Noisy_Visible_and_Infrared_Image_Fusion_Method__685d5064d5b82a4e2e38976afb4b02e3359ccff154e8231646e76cb16970b7a0.jpg",
+    "paper_title": "Deno-IF: Unsupervised Noisy Visible and Infrared Image Fusion Method",
+    "source_file": "14126_Deno-IF_Unsupervised_Noisy_Visible_and_Infrared_Image_Fusion_Method",
+    "page_idx": 3,
+    "section": "3.1 Problem Formulation",
+    "bbox": [
+      174,
+      88,
+      823,
+      382
+    ],
+    "quality_score": 10
+  },
+  {
+    "id": "ref_0061",
+    "domain": "Natural Language Processing",
+    "diagram_type": "Architecture Diagram",
+    "description": "Figure 1: The overall pipeline of InfMasking. Given $n$ modalities $X = ( X _ { 1 } , X _ { 2 } , \\ldots , X _ { n } )$ , we augment them to obtain $X ^ { \\prime }$ and $X ^ { \\prime \\prime }$ , which are then encoded independently by modality-specific encoders to extract latent features. These features are processed in three ways: (1) All modality features are concatenated and input into a Transformer block, yielding fused features $Z ^ { \\prime }$ and $Z ^ { \\prime \\prime }$ ; (2) Each modality feature is individually input into a Transformer block, producing unimodal features $Z _ { 1 } , Z _ { 2 } , \\ldots , Z _ { n } ; ( 3 )$ Features of each modality are randomly masked, concatenated, and input into a Transformer block, repeated $k$ times to obtain $Z _ { \\mathrm { m a s k } } ^ { 1 } , Z _ { \\mathrm { m a s k } } ^ { 2 } , . . . , Z _ { \\mathrm { m a s k } } ^ { k }$ . ",
+    "image_path": "data/spotlight_reference_images/ref_0061_14541_InfMasking_Unleashing_Synergistic_Information_by_Contrastive_Multimodal_Interactions__3a9b359ff8813cdcb42e5f731552b476724081ab26b324d61520dfe760e232c4.jpg",
+    "paper_title": "InfMasking: Unleashing Synergistic Information by Contrastive Multimodal Interactions",
+    "source_file": "14541_InfMasking_Unleashing_Synergistic_Information_by_Contrastive_Multimodal_Interactions",
+    "page_idx": 3,
+    "section": "2 Preliminary: Contrastive Multimodal Interactions",
+    "bbox": [
+      178,
+      88,
+      825,
+      383
+    ],
+    "quality_score": 10
+  },
+  {
+    "id": "ref_0062",
+    "domain": "Natural Language Processing",
+    "diagram_type": "Architecture Diagram",
+    "description": "Figure 2: Overview of our approach. (a) Segmentation modeling: the mask token embedding retrieves similar image features to generate masks (shown with matching colors). (b) Upsampling masks by multiple mask tokens, retrieving more details by more tokens. We use $N { = } 2$ to illustrate while using $N { = } 4$ in implementation. (c) We output open-ended text sequences with textual numbers for detection. ",
+    "image_path": "data/spotlight_reference_images/ref_0062_14625_UFO_A_Unified_Approach_to_Fine-grained_Visual_Perception_via_Open-ended_Language_Interface__7778d47c764c3d39ccf94e9f9eeae95ba728cdfd419af0dc69a51377890c43b8.jpg",
+    "paper_title": "UFO: A Unified Approach to Fine-grained Visual Perception via Open-ended Language Interface",
+    "source_file": "14625_UFO_A_Unified_Approach_to_Fine-grained_Visual_Perception_via_Open-ended_Language_Interface",
+    "page_idx": 3,
+    "section": "3.2 Bounding Box Representation",
+    "bbox": [
+      176,
+      569,
+      820,
+      790
+    ],
+    "quality_score": 10
+  },
+  {
+    "id": "ref_0063",
+    "domain": "Computer Vision",
+    "diagram_type": "Architecture Diagram",
+    "description": "Figure 2: WebPuzzle pipeline. Above: Candidate Generation: Wiki and open-web pages yield QA pairs via (i) Cross-Page QA and (ii) Riddle pipelines, grouped as Cross-Page QA, Open Riddle, and Wiki Riddle. Below: Difficulty Tagging: Each sample is tagged (easy/medium/hard) for adaptive mixing in RL; DeepDiver is trained on a curated 7k-sample mix. ",
+    "image_path": "data/spotlight_reference_images/ref_0063_14894_DeepDiver_Adaptive_Web-Search_Intensity_Scaling_via_Reinforcement_Learning__eab8f2c5b4fb1f7f8676736444fe2c3a699f7a8cdcdc7bc36bec88306a42b5e6.jpg",
+    "paper_title": "DeepDiver: Adaptive Web-Search Intensity Scaling via Reinforcement Learning",
+    "source_file": "14894_DeepDiver_Adaptive_Web-Search_Intensity_Scaling_via_Reinforcement_Learning",
+    "page_idx": 3,
+    "section": "3.1 WebPuzzle",
+    "bbox": [
+      236,
+      75,
+      750,
+      253
+    ],
+    "quality_score": 10
+  },
+  {
+    "id": "ref_0064",
+    "domain": "Computer Vision",
+    "diagram_type": "Architecture Diagram",
+    "description": "Figure 3: Overview of RepLDM. RepLDM divides the denoising process of a pre-trained LDM into two stages. The first stage leverages the introduced attention guidance to enhance the structural consistency by utilizing a novel training-free self-attention mechanism (TFSA). The second stage iteratively upsamples the latent representation in pixel space to eliminate artifacts. ",
+    "image_path": "data/spotlight_reference_images/ref_0064_15032_RepLDM_Reprogramming_Pretrained_Latent_Diffusion_Models_for_High-Quality_High-Efficiency_High-Resolution_Image_Generatio__49f36bb20cf3007bee05a62a443752d47002d114038bc30afeb88c2d5b8e68d2.jpg",
+    "paper_title": "RepLDM: Reprogramming Pretrained Latent Diffusion Models for High-Quality, High-Efficiency, High-Resolution Image Generation",
+    "source_file": "15032_RepLDM_Reprogramming_Pretrained_Latent_Diffusion_Models_for_High-Quality_High-Efficiency_High-Resolution_Image_Generatio",
+    "page_idx": 3,
+    "section": "3.1 Overview of RepLDM",
+    "bbox": [
+      173,
+      88,
+      825,
+      284
+    ],
+    "quality_score": 10
+  },
+  {
+    "id": "ref_0065",
+    "domain": "Natural Language Processing",
+    "diagram_type": "Architecture Diagram",
+    "description": "Figure 1: Overview of Mamba and Transformer Blocks. The green trapezoids represent linear mappings. \"smax\" denotes the softmax function, \"FNN\" stands for feed-forward neural network, and \"LN\" represents layer normalization. The meanings of variables specific to the Mamba block are explained in the main text. ",
+    "image_path": "data/spotlight_reference_images/ref_0065_15063_Achilles_Heel_of_Mamba_Essential_difficulties_of_the_Mamba_architecture_demonstrated_by_synthetic_data__d33f352255ec1956d98dc3760b5f8fabeb4597fcdad19c4d995bb777afe75be7.jpg",
+    "paper_title": "Achilles’ Heel of Mamba: Essential difficulties of the Mamba architecture demonstrated by synthetic data",
+    "source_file": "15063_Achilles_Heel_of_Mamba_Essential_difficulties_of_the_Mamba_architecture_demonstrated_by_synthetic_data",
+    "page_idx": 3,
+    "section": "3.2 Difference between Mamba and Transformer",
+    "bbox": [
+      181,
+      224,
+      821,
+      534
+    ],
+    "quality_score": 10
+  },
+  {
+    "id": "ref_0066",
+    "domain": "Computer Vision",
+    "diagram_type": "Architecture Diagram",
+    "description": "Figure 2: Overview of the URDF-Anything Framework. The pipeline takes a 3D point cloud (from image) and a structured language instruction as input. The 3D MLLM(fine-tuned with LoRA) autoregressively generates symbolic output (kinematic parameters) and $[ S E G ]$ tokens. The embeddings corresponding to the generated $[ S E G ]$ tokens then interact with the point cloud features via a 3D Decoder to perform fine-grained geometric segmentation of the point cloud into individual links. Finally, the jointly predicted kinematic parameters and the segmented geometry are integrated into a functional URDF file, resulting in a complete articulated 3D model ready for physics simulation. ",
+    "image_path": "data/spotlight_reference_images/ref_0066_15204_URDF-Anything_Constructing_Articulated_Objects_with_3D_Multimodal_Language_Model__0b67eeed88846c62fb31c7ebacea97d31f3152992a2189d2861c01ded20e9209.jpg",
+    "paper_title": "URDF-Anything: Constructing Articulated Objects with 3D Multimodal Language Model",
+    "source_file": "15204_URDF-Anything_Constructing_Articulated_Objects_with_3D_Multimodal_Language_Model",
+    "page_idx": 3,
+    "section": "3.1 Task Definition",
+    "bbox": [
+      176,
+      90,
+      818,
+      272
+    ],
+    "quality_score": 10
+  },
+  {
+    "id": "ref_0067",
+    "domain": "Computer Vision",
+    "diagram_type": "Architecture Diagram",
+    "description": "Figure 2: The pipeline of the proposed framework NACD for cross-modal hashing with redundant annotations. NACR refines label confidence by aggregating information from cross-modal neighbors to distinguish true labels from redundant noisy ones. Meanwhile, CRCH constructs reliable positive and negative pairs based on the learned label confidence, which significantly improves robustness against noisy supervision. ",
+    "image_path": "data/spotlight_reference_images/ref_0067_15363_Neighbor-aware_Contrastive_Disambiguation_for_Cross-Modal_Hashing_with_Redundant_Annotations__f81d44fcdcaf182177cc233b7b31674bc2e41e8f23413c0f9e2334362092a047.jpg",
+    "paper_title": "Neighbor-aware Contrastive Disambiguation for Cross-Modal Hashing with Redundant Annotations",
+    "source_file": "15363_Neighbor-aware_Contrastive_Disambiguation_for_Cross-Modal_Hashing_with_Redundant_Annotations",
+    "page_idx": 3,
+    "section": "2.2 Learning with Redundant Annotations",
+    "bbox": [
+      192,
+      88,
+      802,
+      321
+    ],
+    "quality_score": 10
+  },
+  {
+    "id": "ref_0068",
+    "domain": "Computer Vision",
+    "diagram_type": "Architecture Diagram",
+    "description": "Figure 2: Framework of our SignViP for sign language video generation (SLVG). (1) The spoken language text is translated into the multi-condition tokens by Multi-Condition Token Translator. (2) These tokens are decoded by FSQ Autoencoder into multi-condition embeddings, which are equivalent to the embeddings of multiple fine-grained conditions (i.e., fine-grained poses and 3D hands) generated by a multi-condition encoder. (3) The embeddings are injected into Sign Video Diffusion Model to guide the generation of sign language videos. ",
+    "image_path": "data/spotlight_reference_images/ref_0068_15521_Advanced_Sign_Language_Video_Generation_with_Compressed_and_Quantized_Multi-Condition_Tokenization__d2d51f25adb78d6a07a2d44eb42a32142ba34d7fee31cc5553880518bc5ac160.jpg",
+    "paper_title": "Advanced Sign Language Video Generation with Compressed and Quantized Multi-Condition Tokenization",
+    "source_file": "15521_Advanced_Sign_Language_Video_Generation_with_Compressed_and_Quantized_Multi-Condition_Tokenization",
+    "page_idx": 3,
+    "section": "3.1 Preliminary",
+    "bbox": [
+      173,
+      88,
+      823,
+      299
+    ],
+    "quality_score": 10
+  },
+  {
+    "id": "ref_0069",
+    "domain": "Computer Vision",
+    "diagram_type": "Architecture Diagram",
+    "description": "Figure 2: Pipeline of Vgent, a novel framework for long-context video understanding in the proposed graph-based retrieval-reasoning-augmented generation paradigm. It consists of four key stages: (1) Offline video graph construction (Section 3.1): Builds a video graph by extracting knowledge from long videos. (2) Graph-based retrieval (Section 3.2): Retrieves relevant clips based on keywords extracted from the user query. (3) Structured reasoning (Section 3.3): Refines clips using structured queries and aggregates information. (4) Multimodal augmented generation (Section 3.4): Combines refined clips and reasoning results to generate the final response. ",
+    "image_path": "data/spotlight_reference_images/ref_0069_15662_Vgent_Graph-based_Retrieval-Reasoning-Augmented_Generation_For_Long_Video_Understanding__8694c9748eee50b1937d4b0ebdeb004376fc01fe618730f02a4778e83f8fe512.jpg",
+    "paper_title": "Vgent: Graph-based Retrieval-Reasoning-Augmented Generation For Long Video Understanding",
+    "source_file": "15662_Vgent_Graph-based_Retrieval-Reasoning-Augmented_Generation_For_Long_Video_Understanding",
+    "page_idx": 3,
+    "section": "3 Method",
+    "bbox": [
+      173,
+      85,
+      821,
+      337
+    ],
+    "quality_score": 10
+  },
+  {
+    "id": "ref_0070",
+    "domain": "Reinforcement Learning",
+    "diagram_type": "Architecture Diagram",
+    "description": "Figure 2: Overview of CoRL, a co-reinforcement learning framework to jointly improve the dual capabilities of ULMs. CoRL adopts a two-stage RL procedure, comprising a unified RL stage for joint optimization and a refined RL stage for task-specific enhancement. ",
+    "image_path": "data/spotlight_reference_images/ref_0070_15841_Co-Reinforcement_Learning_for_Unified_Multimodal_Understanding_and_Generation__8d1bdeb48a8ecdf31ace6493caea90ec34e8e10428d5b91397cd5531c2b33b09.jpg",
+    "paper_title": "Co-Reinforcement Learning for Unified Multimodal Understanding and Generation",
+    "source_file": "15841_Co-Reinforcement_Learning_for_Unified_Multimodal_Understanding_and_Generation",
+    "page_idx": 3,
+    "section": "3.2 Pilot Exploration",
+    "bbox": [
+      174,
+      87,
+      816,
+      348
+    ],
+    "quality_score": 10
+  },
+  {
+    "id": "ref_0071",
+    "domain": "Computer Vision",
+    "diagram_type": "Architecture Diagram",
+    "description": "Figure 3: Human Simulation Pipeline. We seed the human-LLM with an extended profile. At each time of day, the human proposes an intention and decomposes it into tasks, aligning with profile traits and temporal dependence on intention/task history. LLM inputs are optimized with Memory Retrieval and Search, and robustness is enhanced via two rounds of Reflexion. This pipeline generates continuous, whole-day intentions and tasks executed in the environment with expressive whole-body motion. See Appendices C and F for details. ",
+    "image_path": "data/spotlight_reference_images/ref_0071_16333_COOPERA_Continual_Open-Ended_Human-Robot_Assistance__0560ecda8f650f7bb97ccd0d707e4acdf264b331fcc46dde86585ac98ae9bea3.jpg",
+    "paper_title": "COOPERA: Continual Open-Ended Human-Robot Assistance",
+    "source_file": "16333_COOPERA_Continual_Open-Ended_Human-Robot_Assistance",
+    "page_idx": 3,
+    "section": "3.1 Overview",
+    "bbox": [
+      176,
+      88,
+      823,
+      212
+    ],
+    "quality_score": 10
+  },
+  {
+    "id": "ref_0072",
+    "domain": "Natural Language Processing",
+    "diagram_type": "Training Diagram",
+    "description": "Figure 4: Our approach for human assistance. We decouple robot task inference into intention and task inference. By chaining VLM and classifier, the robot selects tasks aligned with the human’s traits and temporal context. It maintains a human profile inferred from collaboration history, which, combined with feedback, optimizes the robot-VLM via prompting and the classifiers via supervised learning. See Appendices D and G for details. ",
+    "image_path": "data/spotlight_reference_images/ref_0072_16333_COOPERA_Continual_Open-Ended_Human-Robot_Assistance__930e52dd2794927e6fb50bae6bad348468e579bae789b8ff335ac8fe17887fc4.jpg",
+    "paper_title": "COOPERA: Continual Open-Ended Human-Robot Assistance",
+    "source_file": "16333_COOPERA_Continual_Open-Ended_Human-Robot_Assistance",
+    "page_idx": 4,
+    "section": "3.2 Simulating Humans",
+    "bbox": [
+      179,
+      89,
+      821,
+      241
+    ],
+    "quality_score": 10
+  },
+  {
+    "id": "ref_0073",
+    "domain": "Computer Vision",
+    "diagram_type": "Architecture Diagram",
+    "description": "Figure 2: Overview of the proposed MonoLift framework. The student uses single-view RGB input, while the teacher incorporates estimated depth to guide spatial, temporal, and action learning. Both models are trained end-to-end with shared encoder, Transformer, and policy head for consistent knowledge transfer. To avoid redundancy, action and language tokens, shared between teacher and student, are depicted only in the teacher. ",
+    "image_path": "data/spotlight_reference_images/ref_0073_16455_MonoLift_Learning_3D_Manipulation_Policies_from_Monocular_RGB_via_Distillation__ccab38559cedab2d1c2a8bdc521a798e331b4f8bc7975d196eb56249fe6284fc.jpg",
+    "paper_title": "MonoLift: Learning 3D Manipulation Policies from Monocular RGB via Distillation",
+    "source_file": "16455_MonoLift_Learning_3D_Manipulation_Policies_from_Monocular_RGB_via_Distillation",
+    "page_idx": 3,
+    "section": "4.1 Data Flow and Model Architecture",
+    "bbox": [
+      178,
+      90,
+      821,
+      289
+    ],
+    "quality_score": 10
+  },
+  {
+    "id": "ref_0074",
+    "domain": "Graph Learning",
+    "diagram_type": "Architecture Diagram",
+    "description": "Figure 2: Overview of IA-GGAD. ",
+    "image_path": "data/spotlight_reference_images/ref_0074_16584_IA-GGAD_Zero-shot_Generalist_Graph_Anomaly_Detection_via_Invariant_and_Affinity_Learning__2be0842b017b1925d07b25f0276d02ffabc8a00fe4e73cc930b0ee0096fcfd40.jpg",
+    "paper_title": "IA-GGAD: Zero-shot Generalist Graph Anomaly Detection via Invariant and Affinity Learning",
+    "source_file": "16584_IA-GGAD_Zero-shot_Generalist_Graph_Anomaly_Detection_via_Invariant_and_Affinity_Learning",
+    "page_idx": 4,
+    "section": "4.1 Invariant Feature Pool Construction",
+    "bbox": [
+      209,
+      92,
+      789,
+      390
+    ],
+    "quality_score": 10
+  },
+  {
+    "id": "ref_0075",
+    "domain": "Computer Vision",
+    "diagram_type": "Architecture Diagram",
+    "description": "Figure 3: Overview of SANSA: Given $k$ annotated reference images and a target image, we construct a pseudo-video by concatenating them, then leverage SAM2 streaming pipeline to process reference frames together with their annotations sequentially. We restructure SAM2 feature space to make its latent semantic structure explicit, enabling mask propagation based on semantic similarity from reference to target. The emergent semantic structure is visualized by the 3D PCA projection of $\\mathcal { F }$ . ",
+    "image_path": "data/spotlight_reference_images/ref_0075_16810_SANSA_Unleashing_the_Hidden_Semantics_in_SAM2_for_Few-Shot_Segmentation__a53698d17551dcce397bf6ccb6d8643395e4e45230b5350f60b4402de141081d.jpg",
+    "paper_title": "SANSA: Unleashing the Hidden Semantics in SAM2 for Few-Shot Segmentation",
+    "source_file": "16810_SANSA_Unleashing_the_Hidden_Semantics_in_SAM2_for_Few-Shot_Segmentation",
+    "page_idx": 3,
+    "section": "3 Method",
+    "bbox": [
+      181,
+      87,
+      826,
+      321
+    ],
+    "quality_score": 10
+  },
+  {
+    "id": "ref_0076",
+    "domain": "Computer Vision",
+    "diagram_type": "Architecture Diagram",
+    "description": "Figure 2: Comba Families. The Mamba-like architecture omits MLP layers, uses multi-value attention, and doubles the model depth. For the hybrid model, we incorporate sliding window attention in flexible proportions to boost the model’s recall ability. The window size is set to the context length, equivalent to softmax attention. ",
+    "image_path": "data/spotlight_reference_images/ref_0076_16847_Improving_Bilinear_RNN_with_Closed-loop_Control__346edb980fe2eeef4e3740146417099c45c18677da35edb5d244e90a18dd2b08.jpg",
+    "paper_title": "Improving Bilinear RNNs with Closed-loop Control",
+    "source_file": "16847_Improving_Bilinear_RNN_with_Closed-loop_Control",
+    "page_idx": 6,
+    "section": "3.2 Comba with Chunk-wise Parallel",
+    "bbox": [
+      178,
+      88,
+      818,
+      308
+    ],
+    "quality_score": 10
+  },
+  {
+    "id": "ref_0077",
+    "domain": "Computer Vision",
+    "diagram_type": "Architecture Diagram",
+    "description": "Figure 3: An illustration of the proposed GHAP approach. The process begins with full-resolution 3DGS training to obtain initial geometric and appearance features. These Gaussians are then spatially partitioned using a KD-tree and grouped into blocks–analogous to sheep pens. We then perform blockwise Gaussian Mixture Reduction (GMR) to approximate the geometric shape within each block using a much smaller number of Gaussians. This step is analogous to the popular kernel herding method [25]. Finally, a lightweight appearance refinement step further optimizes the appearance feature of the reduced set. This multi-stage pipeline progressively guides the Gaussians in each block–analogous to herding across pens–toward a compact and high-fidelity representation. ",
+    "image_path": "data/spotlight_reference_images/ref_0077_16975_Gaussian_Herding_across_Pens_An_Optimal_Transport_Perspective_on_Global_Gaussian_Reduction_for_3DGS__809999b7e8616e629cca34d93bc7b8b75ecba188172a3aae71532d5f8da49a7f.jpg",
+    "paper_title": "Gaussian Herding across Pens: An Optimal Transport Perspective on Global Gaussian Reduction for 3DGS",
+    "source_file": "16975_Gaussian_Herding_across_Pens_An_Optimal_Transport_Perspective_on_Global_Gaussian_Reduction_for_3DGS",
+    "page_idx": 3,
+    "section": "3.1 Probabilistic Scene Representation",
+    "bbox": [
+      189,
+      89,
+      808,
+      217
+    ],
+    "quality_score": 10
+  },
+  {
+    "id": "ref_0078",
+    "domain": "Natural Language Processing",
+    "diagram_type": "Architecture Diagram",
+    "description": "Figure 2: Overview of our approach, MAESTRO. Input data from arbitrary combinations of sensing modalities is tokenized using symbolic approximation, where a reserved symbol is used to denote missing modalities. A learnable attention budget gate to allocates modality-wise attention capacity for sparse-attention-based modalityspecific encoders. The resulting modality-specific features are concatenated and combined with modality and positional embeddings, forming a long multimodal sequence, which is processed by a sparse cross-modal multihead-attention layer(s). The resulting tokens are routed through a Sparse Mixture-of-Experts module, enabling dynamic specialization under arbitrary observability conditions. Finally, a classifier maps the aggregated representation to task predictions. ",
+    "image_path": "data/spotlight_reference_images/ref_0078_18915_MAESTRO_Adaptive_Sparse_Attention_and_Robust_Learning_for_Multimodal_Dynamic_Time_Series__67404fbbf029c9afb8f8968a7af58d7e984a0b6491776fcd497151bcc2f13bb7.jpg",
+    "paper_title": "MAESTRO : Adaptive Sparse Attention and Robust Learning for Multimodal Dynamic Time Series",
+    "source_file": "18915_MAESTRO_Adaptive_Sparse_Attention_and_Robust_Learning_for_Multimodal_Dynamic_Time_Series",
+    "page_idx": 3,
+    "section": "3.1 Preliminaries and Notations",
+    "bbox": [
+      240,
+      90,
+      759,
+      398
+    ],
+    "quality_score": 10
+  },
+  {
+    "id": "ref_0079",
+    "domain": "Natural Language Processing",
+    "diagram_type": "Architecture Diagram",
+    "description": "Figure 2: The overview of the MAoP training and inference process. ",
+    "image_path": "data/spotlight_reference_images/ref_0079_19455_Wide-Horizon_Thinking_and_Simulation-Based_Evaluation_for_Real-World_LLM_Planning_with_Multifaceted_Constraints__198c85b432b1ddbf1afc76ab8c98e057973c4763acbaa0f16a4da51d97460935.jpg",
+    "paper_title": "Wide-Horizon Thinking and Simulation-Based Evaluation for Real-World LLM Planning with Multifaceted Constraints",
+    "source_file": "19455_Wide-Horizon_Thinking_and_Simulation-Based_Evaluation_for_Real-World_LLM_Planning_with_Multifaceted_Constraints",
+    "page_idx": 3,
+    "section": "2.2 Wide-Horizon Thinking with Aspect-Aware Guidance",
+    "bbox": [
+      174,
+      93,
+      825,
+      386
+    ],
+    "quality_score": 10
+  },
+  {
+    "id": "ref_0080",
+    "domain": "Computer Vision",
+    "diagram_type": "Architecture Diagram",
+    "description": "Figure 2: Overall Framework: (a) 2D MRL model architecture (Section 3.2). (b) Virtual interaction geometry construction (Section 4.1). (c) $S E ( 3 )$ -Invariant Global Geometry Learning (Section 4.2.1). (d) $S E ( 3 )$ -Equivariant Local Relative Geometry Learning (Section 4.2.2). ",
+    "image_path": "data/spotlight_reference_images/ref_0080_19543_3D_Interaction_Geometric_Pre-training_for_Molecular_Relational_Learning__83a8eaca0dfa5c1c767cf45d51dcd59e0847b56fa3746d382df02fe2c7f8dc8f.jpg",
+    "paper_title": "3D Interaction Geometric Pre-training for Molecular Relational Learning",
+    "source_file": "19543_3D_Interaction_Geometric_Pre-training_for_Molecular_Relational_Learning",
+    "page_idx": 3,
+    "section": "3.2 2D MRL Model Architecture",
+    "bbox": [
+      191,
+      88,
+      807,
+      330
+    ],
+    "quality_score": 10
+  },
+  {
+    "id": "ref_0081",
+    "domain": "Computer Vision",
+    "diagram_type": "Methodology Figure",
+    "description": "Figure 5: Handling Static & Rigid Instances. (a) We filter noisy points in the aggregated static point clouds via vertex-level voting on the reconstructed surface, producing $\\mathcal { F } _ { \\mathrm { r e f } } ^ { S , ( 2 ) }$ and $\\mathbf { S } _ { \\mathrm { r e f } }$ . (b) We then adjust the bounding box using surface normals and statistical priors, and select the final box based on 2D IoU between projected boxes and Grounding DINO [22] boxes. ",
+    "image_path": "data/spotlight_reference_images/ref_0081_19930_OpenBox_Annotate_Any_Bounding_Boxes_in_3D__46114bbc65b0c5dc51006123b8a780a899d670fa419bd45a70045da0164d1561.jpg",
+    "paper_title": "OpenBox: Annotate Any Bounding Boxes in 3D",
+    "source_file": "19930_OpenBox_Annotate_Any_Bounding_Boxes_in_3D",
+    "page_idx": 5,
+    "section": "3.2 Adaptive 3D Bounding Box Generation",
+    "bbox": [
+      178,
+      89,
+      818,
+      251
+    ],
+    "quality_score": 10
+  },
+  {
+    "id": "ref_0082",
+    "domain": "Natural Language Processing",
+    "diagram_type": "Architecture Diagram",
+    "description": "Figure 1: Overview of InfiFPO for implicit model fusion. We compute probabilities for preferred $( \\pmb { y } _ { w } )$ and dispreferred $( \\pmb { y } _ { l } )$ responses using both pivot and source models. Following length normalization and probability clipping, we identify the source model with the maximum normalized probability difference from the pivot model for fusion and preference alignment. ",
+    "image_path": "data/spotlight_reference_images/ref_0082_20361_InfiFPO_Implicit_Model_Fusion_via_Preference_Optimization_in_Large_Language_Models__31acf5abaa557c97a77cc1c9abe1392c26234ba8c89a49a135781ba0b2795858.jpg",
+    "paper_title": "InfiFPO: Implicit Model Fusion via Preference Optimization in Large Language Models",
+    "source_file": "20361_InfiFPO_Implicit_Model_Fusion_via_Preference_Optimization_in_Large_Language_Models",
+    "page_idx": 3,
+    "section": "3.1 FuseRLHF: RLHF for Implicit Model Fusion",
+    "bbox": [
+      181,
+      92,
+      813,
+      267
+    ],
+    "quality_score": 10
+  },
+  {
+    "id": "ref_0083",
+    "domain": "Computer Vision",
+    "diagram_type": "Architecture Diagram",
+    "description": "Figure 2: Overview of the physics-informed world model, where physical knowledge is integrated through joint learning of temporal depth estimation and adaptively sampled keypoint dynamics. ",
+    "image_path": "data/spotlight_reference_images/ref_0083_20698_RoboScape_Physics-informed_Embodied_World_Model__d4f7d38c49bffcb348a661ab98a561819cda0d19e0d70e7e85afca8a78c6d605.jpg",
+    "paper_title": "RoboScape: Physics-informed Embodied World Model",
+    "source_file": "20698_RoboScape_Physics-informed_Embodied_World_Model",
+    "page_idx": 3,
+    "section": "2.3 RoboScape: A Physics-informed Embodied World Model",
+    "bbox": [
+      184,
+      85,
+      805,
+      376
+    ],
+    "quality_score": 10
+  },
+  {
+    "id": "ref_0084",
+    "domain": "Reinforcement Learning",
+    "diagram_type": "Methodology Figure",
+    "description": "Figure 3: (a) Given an agent model, AutoToM samples hypotheses for each latent variable $\\mathrm { \\Sigma } _ { o } t$ and $b ^ { t }$ in this example), remove spurious hypotheses, and conduct Bayesian inference based on estimated local conditionals. (b) Given any ToM inference problem, AutoToM refines the agent model by alternating between variable adjustment (introducing belief in this example) and timestep adjustment. ",
+    "image_path": "data/spotlight_reference_images/ref_0084_21254_AutoToM_Scaling_Model-based_Mental_Inference_via_Automated_Agent_Modeling__53e45709689cdb22e79c43986ceb7dd95a89e0537ed690e282906aba317b672b.jpg",
+    "paper_title": "AutoToM: Scaling Model-based Mental Inference via Automated Agent Modeling",
+    "source_file": "21254_AutoToM_Scaling_Model-based_Mental_Inference_via_Automated_Agent_Modeling",
+    "page_idx": 4,
+    "section": "(a) AutoToM constructs appropriate agent models tailored to different scenarios",
+    "bbox": [
+      173,
+      88,
+      826,
+      236
+    ],
+    "quality_score": 10
+  },
+  {
+    "id": "ref_0085",
+    "domain": "Reinforcement Learning",
+    "diagram_type": "Flowchart",
+    "description": "Figure 2: MEMENTO uses a memory to adapt neural solvers at inference time. When taking a decision, data from similar states is retrieved and prepared (1,2), then processed by a MLP to derive correction logits for each action (3). Summing the original and new logits enables to update the action distribution. The resulting policy is then rolled out (4), and transitions’ data is stored in a memory (5,6), including node visited, action taken, log probability, and return obtained. ",
+    "image_path": "data/spotlight_reference_images/ref_0085_22169_Memory-Enhanced_Neural_Solvers_for_Routing_Problems__57ae3c53e263eaed1d5411494d8afa138b9c00c0fcd48b48b00554a0a11aa997.jpg",
+    "paper_title": "Memory-Enhanced Neural Solvers for Routing Problems",
+    "source_file": "22169_Memory-Enhanced_Neural_Solvers_for_Routing_Problems",
+    "page_idx": 3,
+    "section": "3.2 MEMENTO",
+    "bbox": [
+      196,
+      133,
+      799,
+      333
+    ],
+    "quality_score": 10
+  },
+  {
+    "id": "ref_0086",
+    "domain": "Computer Vision",
+    "diagram_type": "Architecture Diagram",
+    "description": "Figure 2: Overview of Image-to-Sphere Policy (ISP) (a) An SO(3)-equivariant observation encoder extracts features from the RGB input, projects them onto the sphere, and applies an equivariance correction using the gripper orientation $R _ { x }$ to account for the camera’s dynamic viewpoint (red arrow). The corrected spherical signal $\\Phi _ { \\mathrm { c o r r } } ( x )$ is then processed by spherical convolution layers to extract SO(3) signals. Proprioceptive inputs are embedded via equivariant linear layers. Both image and proprioceptive features are represented as a set of Fourier coefficients $c _ { \\ell }$ on $\\mathrm { S O } ( 3 )$ and fused (yellow block). (b) The encoded spherical signals are transformed back to the spatial domain via inverse Fourier transform, sampling finite group elements as the conditioning vector for SO(3)-equivariant denoising. The noisy action sequence is processed in the same way, through equivariant linear layers and projected onto the same group elements. ",
+    "image_path": "data/spotlight_reference_images/ref_0086_22536_3D_Equivariant_Visuomotor_Policy_Learning_via_Spherical_Projection__2857dc21c4b5c9af4a1f6743eafa60560ce1fa225ec43fb36b14a6bc612689c3.jpg",
+    "paper_title": "3D Equivariant Visuomotor Policy Learning via Spherical Projection",
+    "source_file": "22536_3D_Equivariant_Visuomotor_Policy_Learning_via_Spherical_Projection",
+    "page_idx": 3,
+    "section": "3.4 Problem formulation",
+    "bbox": [
+      178,
+      89,
+      823,
+      319
+    ],
+    "quality_score": 10
+  },
+  {
+    "id": "ref_0087",
+    "domain": "Graph Learning",
+    "diagram_type": "Training Diagram",
+    "description": "Figure 1: The batch mining mechanism of B3. Initially, a teacher model generates a rank matrix $R$ over the training set, indicating potential negative relationships. From these rankings (specifically ranks in the range ${ \\bar { \\boldsymbol { \\mathrm { J } } } } { \\boldsymbol { p } } : { \\boldsymbol { p } } + m { \\bar { \\boldsymbol { \\mathrm { J } } } }$ for each query), a undirected sparse preference graph $S$ is constructed. Then, METIS clustering is applied to identify communities of mutually strong negatives. Finally, diverse training batches of size |B| are formed by sampling examples from $| B | / K$ distinct communities. ",
+    "image_path": "data/spotlight_reference_images/ref_0087_22755_Breaking_the_Batch_Barrier_B3_of_Contrastive_Learning_via_Smart_Batch_Mining__588e6566b5416ccc18d5f5733612cbc3caa0c11fe2e3bc5c57c32c88a9ec2e41.jpg",
+    "paper_title": "Breaking the Batch Barrier (B3) of Contrastive Learning via Smart Batch Mining",
+    "source_file": "22755_Breaking_the_Batch_Barrier_B3_of_Contrastive_Learning_via_Smart_Batch_Mining",
+    "page_idx": 3,
+    "section": "3.1 Batch Selection",
+    "bbox": [
+      186,
+      87,
+      810,
+      412
+    ],
+    "quality_score": 10
+  },
+  {
+    "id": "ref_0088",
+    "domain": "Computer Vision",
+    "diagram_type": "Architecture Diagram",
+    "description": "Figure 4: Overview of patient representation construction. ",
+    "image_path": "data/spotlight_reference_images/ref_0088_22815_Fine-grained_List-wise_Alignment_for_Generative_Medication_Recommendation__e9e98a02e9416522c103e1fa907746fe47d308684fb413be315db6aac8417085.jpg",
+    "paper_title": "Fine-grained List-wise Alignment for Generative Medication Recommendation",
+    "source_file": "22815_Fine-grained_List-wise_Alignment_for_Generative_Medication_Recommendation",
+    "page_idx": 6,
+    "section": "4.3 Two-stage Recommendation Framework",
+    "bbox": [
+      179,
+      88,
+      823,
+      237
+    ],
+    "quality_score": 10
+  },
+  {
+    "id": "ref_0089",
+    "domain": "Graph Learning",
+    "diagram_type": "Architecture Diagram",
+    "description": "Figure 2: (a) The overview of ssCDL; (b) The framework of CDL-RL and PCDG. ",
+    "image_path": "data/spotlight_reference_images/ref_0089_25264_Uncertain_Knowledge_Graph_Completion_via_Semi-Supervised_Confidence_Distribution_Learning__3792d52f540c8d8f38a2811f7587d39a902406ffa9ea465f4f7aa90d17c6ae6b.jpg",
+    "paper_title": "Uncertain Knowledge Graph Completion via Semi-Supervised Confidence Distribution Learning",
+    "source_file": "25264_Uncertain_Knowledge_Graph_Completion_via_Semi-Supervised_Confidence_Distribution_Learning",
+    "page_idx": 3,
+    "section": "4.1 Overview",
+    "bbox": [
+      179,
+      512,
+      823,
+      676
+    ],
+    "quality_score": 10
+  },
+  {
+    "id": "ref_0090",
+    "domain": "Optimization / Theory",
+    "diagram_type": "Methodology Figure",
+    "description": "Figure 1: An illustration of a 4-bit multiplier with AND-gate based PPG. ",
+    "image_path": "data/spotlight_reference_images/ref_0090_25851_High-Performance_Arithmetic_Circuit_Optimization_via_Differentiable_Architecture_Search__77016fb2442549ddf0948cbc73665b099807b9060057aa5f23808eca157535e7.jpg",
+    "paper_title": "High-Performance Arithmetic Circuit Optimization via Differentiable Architecture Search",
+    "source_file": "25851_High-Performance_Arithmetic_Circuit_Optimization_via_Differentiable_Architecture_Search",
+    "page_idx": 2,
+    "section": "2 Preliminary: Arithmetic Circuit Optimization",
+    "bbox": [
+      191,
+      85,
+      813,
+      234
+    ],
+    "quality_score": 10
+  },
+  {
+    "id": "ref_0091",
+    "domain": "Computer Vision",
+    "diagram_type": "Architecture Diagram",
+    "description": "Figure 4: Overview of our proposed ARITH-DAS framework. ",
+    "image_path": "data/spotlight_reference_images/ref_0091_25851_High-Performance_Arithmetic_Circuit_Optimization_via_Differentiable_Architecture_Search__3ee1c39cfef34789b84c9ac395142833bb0505590625b927b99365a1726d429b.jpg",
+    "paper_title": "High-Performance Arithmetic Circuit Optimization via Differentiable Architecture Search",
+    "source_file": "25851_High-Performance_Arithmetic_Circuit_Optimization_via_Differentiable_Architecture_Search",
+    "page_idx": 5,
+    "section": "4.3.1 Adaptable Allocation Search via Circuit Evolution",
+    "bbox": [
+      179,
+      74,
+      823,
+      289
+    ],
+    "quality_score": 10
+  },
+  {
+    "id": "ref_0092",
+    "domain": "Natural Language Processing",
+    "diagram_type": "Methodology Figure",
+    "description": "Figure 1: Illustration of the zero-sum linear attention block, including the computation of deviation logits and the reweighted zero-sum softmax operation ",
+    "image_path": "data/spotlight_reference_images/ref_0092_26459_ZeroS_ZeroSum_Linear_Attention_for_Efficient_Transformers__47c8164ce92491496b8a2bcf9fa7ab7edc460fdfd5bd8ef3cf8bab314c81fd4a.jpg",
+    "paper_title": "ZeroS: Zero-Sum Linear Attention for Efficient Transformers",
+    "source_file": "26459_ZeroS_ZeroSum_Linear_Attention_for_Efficient_Transformers",
+    "page_idx": 3,
+    "section": "3.1 The Expansion of Softmax Function",
+    "bbox": [
+      196,
+      90,
+      802,
+      256
+    ],
+    "quality_score": 10
+  },
+  {
+    "id": "ref_0093",
+    "domain": "Computer Vision",
+    "diagram_type": "Architecture Diagram",
+    "description": "Figure 2: The Pipeline of CSG-PCC. Given a partial point cloud $P _ { p }$ , we divide it into patches, followed by random masking to create two incomplete point clouds, $P _ { o } ^ { ( 1 ) }$ and $P _ { o } ^ { ( 2 ) }$ . Then point clouds are processed through the encoder to extract features, and then fed into the Complete Structure Reconstruction Module. The CSRM are composed of two core components: a) Feature Disentanglement Module: maps encoder outputs into shape features $f _ { \\mathrm { s h a p e } }$ and style features $f _ { \\mathrm { s t y l e } }$ via two disentanglers. b) Prototype Projection Module: Refines $f _ { \\mathrm { s h a p e } }$ via learnable prototype memory bank $\\mathcal { M }$ , producing structure-enhanced features $\\hat { f } _ { \\mathrm { s h a p e } }$ . Then we concatenates $\\hat { f } _ { \\mathrm { s h a p e } }$ and $f _ { \\mathrm { s t y l e } }$ as decoder input to generate the completed point clouds. Dual-level contrastive learning are used to ensure structural completeness and detail preservation. ",
+    "image_path": "data/spotlight_reference_images/ref_0093_26655_Complete_Structure_Guided_Point_Cloud_Completion_via_Cluster-_and_Instance-Level_Contrastive_Learning__d20fe3769e61092c3c117a89910e94568e63136f5bb1bc9c2cb4c647dc5bb03d.jpg",
+    "paper_title": "Complete Structure Guided Point Cloud Completion via Cluster- and Instance-Level Contrastive Learning",
+    "source_file": "26655_Complete_Structure_Guided_Point_Cloud_Completion_via_Cluster-_and_Instance-Level_Contrastive_Learning",
+    "page_idx": 3,
+    "section": "3 Method",
+    "bbox": [
+      181,
+      92,
+      813,
+      265
+    ],
+    "quality_score": 10
+  },
+  {
+    "id": "ref_0094",
+    "domain": "Computer Vision",
+    "diagram_type": "Training Diagram",
+    "description": "Figure 2: Our Compressibility-inspired Unsupervised Learning via Parallel Imaging Fidelity (CUPID) method trains PD-DL models in an unsupervised and/or zero-shot manner without requiring any raw k-space data. The network is unrolled for $T$ units, with each unit consisting of regularizer (R) and data fidelity (DF). The proposed loss function comprises two terms: (a) a reweighted $\\ell _ { 1 }$ component that assesses the compressibility of the network’s output; (b) a fidelity term that ensures the output stays consistent with parallel imaging reconstructions via carefully designed perturbations, thereby preventing the network from producing a sparse all-zeros output. ",
+    "image_path": "data/spotlight_reference_images/ref_0094_26907_Fast_MRI_for_All_Bridging_Access_Gaps_by_Training_without_Raw_Data__b470855022bfded5864733446e130866e7eb600954465a2b6fbccb5d94396efd.jpg",
+    "paper_title": "Fast MRI for All: Bridging Access Gaps by Training without Raw Data",
+    "source_file": "26907_Fast_MRI_for_All_Bridging_Access_Gaps_by_Training_without_Raw_Data",
+    "page_idx": 4,
+    "section": "3.2 Training without raw k-space data",
+    "bbox": [
+      176,
+      88,
+      820,
+      280
+    ],
+    "quality_score": 10
+  },
+  {
+    "id": "ref_0095",
+    "domain": "Computer Vision",
+    "diagram_type": "Architecture Diagram",
+    "description": "Figure 2: Comparison of Model Architectures in Unified Multimodal Models. (a) AR-based models [20, 26, 21, 52–54, 18, 55] perform multimodal tasks via sequential token generation under strictly causal context modeling. (b) Hybrid AR $^ +$ Diffusion models, such as Transfusion [19] and Show-o [56], integrate AR for text and diffusion models for images, enabling improved visual generation quality. (c-d) Diffusion-based models: D-DiT [46] applies mask-based discrete diffusion to text and continuous diffusion to images, while UniDisc [48] employs mask-based discrete diffusion for both modalities. (e) FUDOKI adopts a unified discrete flow matching framework for both modalities, leveraging a metric-induced probability path to enhance performance in understanding and generation tasks. The inference advantages of FUDOKI over mask-based discrete diffusion modeling used in (c-d) are shown in Fig. 3. ",
+    "image_path": "data/spotlight_reference_images/ref_0095_26919_FUDOKI_Discrete_Flow-based_Unified_Understanding_and_Generation_via_Kinetic-Optimal_Velocities__9c0a452656594ea3134b9cdcb16988663e9015013c42419254bc35661139b69f.jpg",
+    "paper_title": "FUDOKI: Discrete Flow-based Unified Understanding and Generation via Kinetic-Optimal Velocities",
+    "source_file": "26919_FUDOKI_Discrete_Flow-based_Unified_Understanding_and_Generation_via_Kinetic-Optimal_Velocities",
+    "page_idx": 4,
+    "section": "3.1 Metric-induced Probability Paths with Kinetic Optimal Velocities",
+    "bbox": [
+      176,
+      89,
+      821,
+      489
+    ],
+    "quality_score": 10
+  },
+  {
+    "id": "ref_0096",
+    "domain": "Computer Vision",
+    "diagram_type": "Architecture Diagram",
+    "description": "Figure 1: An overview of LogicTree, which comprises three key modules: (1) Logical reasoning tree generation via iterative backward deduction based on structural pattern matching; (2) Reasoning scenario instantiation using a two-stage LLM-based approach; (3) Synthetic reasoning example post-processing. ",
+    "image_path": "data/spotlight_reference_images/ref_0096_26975_LogicTree_Improving_Complex_Reasoning_of_LLMs_via_Instantiated_Multi-step_Synthetic_Logical_Data__75918e90d782aa4c0011abbf0fe69a93e2595315a84e5dd3ba23b1cddfb672b5.jpg",
+    "paper_title": "LogicTree: Improving Complex Reasoning of LLMs via Instantiated Multi-step Synthetic Logical Data",
+    "source_file": "26975_LogicTree_Improving_Complex_Reasoning_of_LLMs_via_Instantiated_Multi-step_Synthetic_Logical_Data",
+    "page_idx": 2,
+    "section": "2 Preliminary",
+    "bbox": [
+      179,
+      87,
+      820,
+      372
+    ],
+    "quality_score": 10
+  },
+  {
+    "id": "ref_0097",
+    "domain": "Natural Language Processing",
+    "diagram_type": "Architecture Diagram",
+    "description": "Figure 1: An overview of CoAPT. Natural CLIP processes natural images and extended descriptive text inputs. Robust CLIP takes as input the images subjected to HF suppression via the real-time Adaptive-FGP algorithm and restores the corrupted natural generalization features under the guidance of Natural CLIP in the latent space. The outputs of Robust CLIP are collaboratively regulated by the frozen CLIP weights $\\theta$ , the trainable deep multimodal adversarial prompts $\\phi$ , and the low-rank residual modules $\\varphi$ . The Rényi branch explicitly regulates the discrepancy between natural and adversarial distributions by calculating the divergence between their similarity scores. ",
+    "image_path": "data/spotlight_reference_images/ref_0097_27132_Learning_Robust_Vision-Language_Models_from_Natural_Latent_Spaces__1c87de8566409b858e4d9bc3229961976739c1c02d52c8afc8f9c78d21a2caf3.jpg",
+    "paper_title": "Learning Robust Vision-Language Models from Natural Latent Spaces",
+    "source_file": "27132_Learning_Robust_Vision-Language_Models_from_Natural_Latent_Spaces",
+    "page_idx": 3,
+    "section": "3.1 Preliminaries",
+    "bbox": [
+      174,
+      88,
+      821,
+      242
+    ],
+    "quality_score": 10
+  },
+  {
+    "id": "ref_0098",
+    "domain": "Computer Vision",
+    "diagram_type": "Architecture Diagram",
+    "description": "Figure 2: DexFlyWheel Framework Overview. The framework has two stages: a warm-up stage (left) and a self-improving data flywheel stage (right). In the warm-up stage, seed demonstrations from VR teleoperation are augmented to form the initial dataset $\\mathcal { D } _ { 1 }$ . The data flywheel stage operates as a closed-loop cycle with four key components:(1) base policy $\\pi _ { \\mathrm { b a s e } }$ training to capture human-like behaviors, (2) residual policy $\\pi _ { \\mathrm { r e s } }$ training to enhance generalization, (3) combined policy πcombined rollouts to generate new trajectories, and (4) data augmentation to further diversify the dataset. As the flywheel iterates, both data diversity and policy capability continuously improve. ",
+    "image_path": "data/spotlight_reference_images/ref_0098_27155_DexFlyWheel_A_Scalable_and_Self-improving_Data_Generation_Framework_for_Dexterous_Manipulation__6cb5d9f8f05d11ff6e6bf4f69015de5ad79051d577633793092cf0b753f0d1aa.jpg",
+    "paper_title": "DexFlyWheel: A Scalable and Self-improving Data Generation Framework for Dexterous Manipulation",
+    "source_file": "27155_DexFlyWheel_A_Scalable_and_Self-improving_Data_Generation_Framework_for_Dexterous_Manipulation",
+    "page_idx": 3,
+    "section": "4 Method",
+    "bbox": [
+      192,
+      97,
+      805,
+      422
+    ],
+    "quality_score": 10
+  },
+  {
+    "id": "ref_0099",
+    "domain": "Machine Learning",
+    "diagram_type": "Architecture Diagram",
+    "description": "Figure 3: The overview of error space-based traceability mechanism ErrorTrace. ",
+    "image_path": "data/spotlight_reference_images/ref_0099_27534_ErrorTrace_A_Black-Box_Traceability_Mechanism_Based_on_Model_Family_Error_Space__3443e7f7bc9975c59b1083ffbc48907922f978304738c48dd66a04e275fa8b34.jpg",
+    "paper_title": "ErrorTrace: A Black-Box Traceability Mechanism Based on Model Family Error Space",
+    "source_file": "27534_ErrorTrace_A_Black-Box_Traceability_Mechanism_Based_on_Model_Family_Error_Space",
+    "page_idx": 3,
+    "section": "4 Methodology of ErrorTrace",
+    "bbox": [
+      225,
+      611,
+      774,
+      795
+    ],
+    "quality_score": 10
+  },
+  {
+    "id": "ref_0100",
+    "domain": "Machine Learning",
+    "diagram_type": "Architecture Diagram",
+    "description": "Figure 5: Overview of WEB-SHEPHERD (left) and its diverse use cases (right). ",
+    "image_path": "data/spotlight_reference_images/ref_0100_28009_Web-Shepherd_Advancing_PRMs_for_Reinforcing_Web_Agents__c6ed4aceca780ae65b05dd769ca4c1745cac4f7f5f1f3178b4223b9eea08d1d5.jpg",
+    "paper_title": "Abstract",
+    "source_file": "28009_Web-Shepherd_Advancing_PRMs_for_Reinforcing_Web_Agents",
+    "page_idx": 4,
+    "section": "4.3 Dataset Statistics",
+    "bbox": [
+      189,
+      88,
+      805,
+      247
+    ],
+    "quality_score": 10
+  }
+]
