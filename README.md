@@ -1,61 +1,25 @@
 # 🍌 PaperBanana
 
-Implementation of the **PaperBanana** framework from ["PaperBanana: Automating Academic Illustration for AI Scientists"](hhttps://arxiv.org/abs/2601.23265) (Zhu et al., 2025).
+> **Unofficial open-source implementation** of ["PaperBanana: Automating Academic Illustration for AI Scientists"](https://arxiv.org/abs/2601.23265) (Zhu et al.).
 
-> An agentic framework that turns methodology text into publication-ready architecture diagrams — no Figma, no TikZ, no tears.
 
-## Examples
+[![Try it on HuggingFace Spaces](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Spaces-blue)](https://huggingface.co/spaces/Samarth0710/PaperBanana)
 
-All images below were generated end-to-end by PaperBanana (3 refinement iterations each, using the NeurIPS 2025 spotlight reference set).
 
-### Transformer — *Attention Is All You Need* (Vaswani et al., 2017)
+## Demo
 
-<p align="center">
-  <img src="examples/readme/transformer_iter3_0.jpg" width="600" />
-</p>
+Try PaperBanana directly in your browser — no setup required:
 
-### ResNet — *Deep Residual Learning* (He et al., 2016)
+**🔗 [huggingface.co/spaces/Samarth0710/PaperBanana](https://huggingface.co/spaces/Samarth0710/PaperBanana)**
 
-<p align="center">
-  <img src="examples/readme/resnet_iter3_0.jpg" width="600" />
-</p>
-
-### DDPM — *Denoising Diffusion Probabilistic Models* (Ho et al., 2020)
-
-<p align="center">
-  <img src="examples/readme/ddpm_iter3_0.jpg" width="600" />
-</p>
-
----
 
 ## How It Works
 
-PaperBanana orchestrates **five specialized agents** in an iterative pipeline:
+<p align="center">
+  <img src="docs/method_diagram.png" width="700" />
+</p>
 
-```
-Methodology Text + Caption
-        │
-        ▼
-  ┌─────────────┐
-  │  Retriever   │  → Finds relevant reference diagrams (from 100 NeurIPS examples)
-  └──────┬──────┘
-         ▼
-  ┌─────────────┐
-  │   Planner    │  → Translates methodology into a detailed visual description
-  └──────┬──────┘
-         ▼
-  ┌─────────────┐
-  │   Stylist    │  → Applies academic aesthetic guidelines
-  └──────┬──────┘
-         ▼
-  ┌─────────────┐
-  │  Visualizer  │  → Generates the image (Gemini image generation)
-  └──────┬──────┘
-         ▼
-  ┌─────────────┐
-  │   Critic     │  → Evaluates & provides feedback → loops back to Planner
-  └─────────────┘
-```
+<p align="center"><em>PaperBanana pipeline overview — figure from <a href="https://arxiv.org/abs/2601.23265">Zhu et al., 2025</a></em></p>
 
 ## Installation
 
@@ -69,7 +33,7 @@ Or with [uv](https://docs.astral.sh/uv/):
 uv sync
 ```
 
-## Setup
+### Setup
 
 Create a `.env` file with your Gemini API key:
 
@@ -83,26 +47,19 @@ GEMINI_API_KEY=your-api-key-here
 from paperbanana import generate_illustration
 from load_reference_set import load_reference_set
 
-# Load 100 curated NeurIPS 2025 architecture diagrams
-ref_set = load_reference_set()
-
-methodology = """
-Our model uses a Vision Transformer backbone to extract patch embeddings,
-followed by a cross-attention module that fuses text and image features.
-The fused representation is decoded by a lightweight MLP head for classification.
-"""
+ref_set = load_reference_set()  # 100 curated NeurIPS 2025 diagrams
 
 result = generate_illustration(
-    methodology_text=methodology,
+    methodology_text="Our model uses a Vision Transformer backbone ...",
     caption="Architecture of our proposed vision-language fusion model",
     reference_set=ref_set,
     output_path="output/my_diagram",
 )
-
 print(f"Generated: {result['final_image_path']}")
 ```
 
-### Advanced Usage
+<details>
+<summary><strong>Advanced usage</strong></summary>
 
 ```python
 from paperbanana import PaperBanana
@@ -120,44 +77,36 @@ result = pb.generate(
     output_path="output/diagram",
 )
 
-# Save full generation history for analysis
 pb.save_history("output/history.json")
 ```
+
+</details>
 
 ## Project Structure
 
 ```
 paperbanana/
-├── paperbanana.py            # Main orchestration
-├── config.py                 # API keys & model config
-├── aesthetic_guidelines.py   # NeurIPS-style visual guidelines
-├── utils.py                  # Shared utilities
-├── load_reference_set.py     # Load reference set for RetrieverAgent
-├── examples.py               # Runnable examples
+├── paperbanana.py              # Main orchestration
+├── app.py                      # Gradio web UI
+├── config.py                   # API keys & model config
+├── aesthetic_guidelines.py     # NeurIPS-style visual guidelines
+├── utils.py                    # Shared utilities
+├── load_reference_set.py       # Reference set loader
+├── examples.py                 # Runnable examples
 ├── agents/
-│   ├── retriever.py          # Retriever Agent  (VLM-based ranking)
-│   ├── planner.py            # Planner Agent    (methodology → description)
-│   ├── stylist.py            # Stylist Agent    (aesthetic refinement)
-│   ├── visualizer.py         # Visualizer Agent (image generation)
-│   └── critic.py             # Critic Agent     (evaluate & feedback)
+│   ├── retriever.py            # Retriever Agent  (VLM-based ranking)
+│   ├── planner.py              # Planner Agent    (methodology → description)
+│   ├── stylist.py              # Stylist Agent    (aesthetic refinement)
+│   ├── visualizer.py           # Visualizer Agent (image generation)
+│   └── critic.py               # Critic Agent     (evaluate & feedback)
 ├── data/
-│   ├── spotlight_reference_set.json      # 100 curated architecture diagrams
-│   └── spotlight_reference_images/       # Corresponding images
-├── examples/                 # Generated output images
-│   └── readme/               # Showcase examples shown above
-├── pyproject.toml
-├── requirements.txt
-└── README.md
+│   ├── spotlight_reference_set.json
+│   └── spotlight_reference_images/
+├── docs/                       # Paper figures & notes
+├── examples/                   # Generated output images
+├── Dockerfile                  # HF Spaces Docker config
+└── requirements.txt
 ```
-
-## Reference Set
-
-The Retriever Agent draws from **100 top-quality architecture diagrams** curated from NeurIPS 2025 Spotlight papers:
-
-- **685** spotlight papers parsed with [MinerU](https://github.com/opendatalab/MinerU) on [Modal](https://modal.com) (50× A10G GPUs)
-- **1,732** methodology-section images extracted via section-aware filtering
-- **321** verified architecture diagrams after 2-pass Gemini classification (caption + visual)
-- **100** final diagrams selected by quality ranking (all scored 10/10)
 
 ## Configuration
 
@@ -170,7 +119,9 @@ Edit `config.py`:
 | `MAX_REFINEMENT_ITERATIONS` | `3` | Planner↔Critic loop iterations |
 | `NUM_REFERENCE_EXAMPLES` | `10` | References retrieved per generation |
 
-## Paper
+## Citation
+
+This is an unofficial implementation. Please cite the original paper:
 
 ```bibtex
 @article{zhu2025paperbanana,
@@ -183,4 +134,4 @@ Edit `config.py`:
 
 ## License
 
-This implementation is for research and educational purposes.
+MIT — this implementation is for research and educational purposes.
